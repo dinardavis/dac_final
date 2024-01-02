@@ -67,8 +67,6 @@ export default function MailingList() {
     }
   }
 
-  console.log(mailingListCopy.textContent)
-
   function sendEmail(event) {
     event.preventDefault()
     if(formInputsValid.email) {

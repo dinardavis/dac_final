@@ -54,7 +54,6 @@ export default function ApplyForm(props) {
     )
   }
 
-
   React.useEffect(() => {
     setFirstNameField(document.querySelector(".firstNameField"))
     setLastNameField(document.querySelector(".lastNameField"))
@@ -65,6 +64,8 @@ export default function ApplyForm(props) {
     setCoverletterInput(document.querySelector(".coverletter-input"))
   }, [])
 
+
+
   const [firstNameField, setFirstNameField] = React.useState("")
   const [lastNameField, setLastNameField] = React.useState("")
   const [emailField, setEmailField] = React.useState("")
@@ -73,13 +74,23 @@ export default function ApplyForm(props) {
   const [coverletterBtn, setCoverletterBtn] = React.useState("")
   const [coverletterInput, setCoverletterInput] = React.useState("")
 
+
+  console.log(resumeInput.value)
+
   function handleChange(event) {
     setFormData(prevFormData => {
-      if(event.target.name === "resumeFile" || event.target.name === "coverletterFile") {
+      if(event.target.name === "resumeFile") {
+        validateResumeUpload()
         return {
           ...prevFormData,
           [event.target.name]: event.target.files[0]
         }
+      } else if (event.target.name === "coverletterFile") {
+          validateCoverletterUpload()
+          return {
+            ...prevFormData,
+            [event.target.name]: event.target.files[0]
+          }   
       } else {
         return {
           ...prevFormData,
@@ -90,10 +101,9 @@ export default function ApplyForm(props) {
     validateFormOnChange()
   }
 
+
   function removeResume(event) {
     resumeInput.value = ""
-    validateResumeUpload()
-
     setFormData(prevFormData => {
       return {
         ...prevFormData,
@@ -104,12 +114,12 @@ export default function ApplyForm(props) {
     setFormInputsValid (prevFormInputsValid => {
       return {...prevFormInputsValid, resumeField: false}
     })
+
+    validateResumeUpload()
   }
 
   function removeCoverletter(event) {
     coverletterInput.value = ""
-    validateCoverletterUpload()
-
     setFormData(prevFormData => {
       return {
         ...prevFormData,
@@ -120,14 +130,32 @@ export default function ApplyForm(props) {
     setFormInputsValid (prevFormInputsValid => {
       return {...prevFormInputsValid, coverletterField: false}
     })
+
+    validateCoverletterUpload()
+  }
   
 
-    if(!formData.coverletterFile.name)  {
+  function validateResumeUpload() {
+    if(formData.resumeFile.name)  {
+      resumeBtn.classList.add("input-error")
+      setFormInputsValid(prevFormInputsValid => {
+        return {...prevFormInputsValid, resumeField: false}
+      })
+    } else if(!formData.resumeFile.name) {
+      resumeBtn.classList.remove("input-error")
+      setFormInputsValid(prevFormInputsValid => {
+        return {...prevFormInputsValid, resumeField: true}
+      })
+    }
+  }
+
+  function validateCoverletterUpload() {
+    if(formData.coverletterFile.name)  {
       coverletterBtn.classList.add("input-error")
       setFormInputsValid(prevFormInputsValid => {
         return {...prevFormInputsValid, coverletterField: false}
       })
-    } else if(formData.coverletterFileFile.name) {
+    } else if(!formData.coverletterFile.name) {
       coverletterBtn.classList.remove("input-error")
       setFormInputsValid(prevFormInputsValid => {
         return {...prevFormInputsValid, coverletterField: true}
@@ -135,21 +163,10 @@ export default function ApplyForm(props) {
     }
   }
 
-  function validateResumeUpload() {
-    if(!resumeInput.value)  {
-      resumeBtn.classList.add("input-error")
-    } else if(resumeInput.value) {
-      resumeBtn.classList.remove("input-error")
-    }
-  }
 
-  function validateCoverletterUpload() {
-    if(!coverletterInput.value)  {
-      coverletterBtn.classList.add("input-error")
-    } else if(coverletterInput.value) {
-      coverletterBtn.classList.remove("input-error")
-    }
-  }
+ 
+
+ 
 
   function validateFormOnChange() {
     const emailFormat = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
@@ -192,10 +209,11 @@ export default function ApplyForm(props) {
     }
   }
 
+  console.log(formInputsValid)
+
   function validateFormOnSubmit() {
     const emailFormat = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
     const nameFormat = /^[A-Za-z]+$/
-
     if(!firstNameField.value.match(nameFormat)) {
       firstNameField.classList.add("input-error")
       setFormInputsValid(prevFormInputsValid => {
@@ -237,11 +255,6 @@ export default function ApplyForm(props) {
       setFormInputsValid(prevFormInputsValid => {
         return {...prevFormInputsValid, resumeField: false}
       })
-    } else if(formData.resumeFile.name) {
-      resumeBtn.classList.remove("input-error")
-      setFormInputsValid(prevFormInputsValid => {
-        return {...prevFormInputsValid, resumeField: true}
-      })
     }
 
     if(!formData.coverletterFile.name)  {
@@ -249,13 +262,12 @@ export default function ApplyForm(props) {
       setFormInputsValid(prevFormInputsValid => {
         return {...prevFormInputsValid, coverletterField: false}
       })
-    } else if(formData.coverletterFileFile.name) {
-      coverletterBtn.classList.remove("input-error")
-      setFormInputsValid(prevFormInputsValid => {
-        return {...prevFormInputsValid, coverletterField: true}
-      })
     }
+
+    
   }
+
+
 
   React.useEffect(() => {
     if(
@@ -295,7 +307,6 @@ export default function ApplyForm(props) {
       })
     }, 5000);
   }
-
 
   return (
     <section className='contact-section'>
