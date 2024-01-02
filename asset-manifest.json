@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/dac_final/static/css/main.9bae8e43.css",
-    "main.js": "/dac_final/static/js/main.58a63b52.js",
+    "main.js": "/dac_final/static/js/main.aa590516.js",
     "static/js/787.fd0d37ef.chunk.js": "/dac_final/static/js/787.fd0d37ef.chunk.js",
     "static/media/15th_video.mp4": "/dac_final/static/media/15th_video.1958ef9597f9c55769ea.mp4",
+    "static/media/firstcall_english.mp4": "/dac_final/static/media/firstcall_english.27e141b8945a518083c5.mp4",
+    "static/media/firstcall_spanish.mp4": "/dac_final/static/media/firstcall_spanish.b18521925acf415758a8.mp4",
+    "static/media/firstcall_vietnamese.mp4": "/dac_final/static/media/firstcall_vietnamese.f468a6466bbdffb889a7.mp4",
     "static/media/allstaff.jpg": "/dac_final/static/media/allstaff.6edea696f244a63dd280.jpg",
     "static/media/impact_mom_infant.jpg": "/dac_final/static/media/impact_mom_infant.94ac0bce3483c761756f.jpg",
     "static/media/location.png": "/dac_final/static/media/location.7f80d9f493cadc4d0402.png",
@@ -50,11 +53,11 @@
     "static/media/footer_left.png": "/dac_final/static/media/footer_left.81e613b90dc4c6a4285a.png",
     "index.html": "/dac_final/index.html",
     "main.9bae8e43.css.map": "/dac_final/static/css/main.9bae8e43.css.map",
-    "main.58a63b52.js.map": "/dac_final/static/js/main.58a63b52.js.map",
+    "main.aa590516.js.map": "/dac_final/static/js/main.aa590516.js.map",
     "787.fd0d37ef.chunk.js.map": "/dac_final/static/js/787.fd0d37ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bae8e43.css",
-    "static/js/main.58a63b52.js"
+    "static/js/main.aa590516.js"
   ]
 }
