@@ -283,7 +283,7 @@ export default function ApplyForm(props) {
   function sendEmail(event) {
     event.preventDefault();
     if(formInputsValid.formValid) {
-      emailjs.sendForm('service_d8udpus', 'template_on2rcqg', event.target, 'GEoOD8ZFwvGRuRPY')
+      emailjs.sendForm('service_d8udpus', 'template_on2rcqg', event.target, 'GEoOD8ZFwvGRuRPYl')
         .then(function(response) {
           setEmailSuccess(true)
           clearInputs()
