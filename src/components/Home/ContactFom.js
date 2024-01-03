@@ -1,11 +1,15 @@
 import * as React from "react";
 import emailjs from "@emailjs/browser";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
+import { IoCloseCircleSharp } from "react-icons/io5";
 
 export default function Contact() {
   const [popupDisplay, setPopupDisplay] = React.useState({
     display: "none",
   });
+
+  const [emailSuccess, setEmailSuccess] = React.useState(false)
+
   const [formData, setFormData] = React.useState({
     contactGroup: "",
     firstName: "",
@@ -156,16 +160,22 @@ export default function Contact() {
       formInputsValid.email &&
       formInputsValid.message
     ) {
-      animatePopup();
       emailjs.sendForm(
         "service_d8udpus",
         "template_x08v0ou",
         event.target,
         "GEoOD8ZFwvGRuRPYl"
-      );
-      // const {name, value, type, checked} = event.target
-      clearInputs();
-      resetFormInputs();
+      )
+      .then((response) => {
+        setEmailSuccess(true)
+        clearInputs()
+        resetFormInputs()
+        animatePopup()
+      }) 
+      .catch((error) => {
+        setEmailSuccess(false)
+        animatePopup()
+      });
     } else {
       if (contactGroupField.value.length === 0) {
         contactGroupField.classList.add("input-error");
@@ -201,15 +211,26 @@ export default function Contact() {
   return (
     <form className="form contact-form" onSubmit={sendEmail}>
       <div className="thank-you-popup" style={popupDisplay}>
-        <p className="thank-you-copy success">Success!</p>
+        <p className="thank-you-copy success">{emailSuccess ? "Success!" : "Error!"}</p>
         <div className="checkmark-container">
-          <IoCheckmarkCircleSharp className="thank-you-pop-checkmark" />
+        {emailSuccess ? <IoCheckmarkCircleSharp className='thank-you-pop-checkmark'/> : <IoCloseCircleSharp className='thank-you-pop-error' />}
         </div>
 
-        <p className="thank-you-copy">
-          Thank you<br></br> for contacting DAC.
-        </p>
-        <p className="thank-you-copy">We will be in touch soon.</p>
+       
+
+
+        {emailSuccess ?
+          <>
+          <p className="thank-you-copy">
+          Thank you<br></br> for contacting DAC.</p>
+          <p className="thank-you-copy">We will be in touch soon.</p>
+          </>    
+          : 
+          <>
+            <p className='thank-you-copy'>Uh oh! It looks like something went wrong.</p>
+            <p className='thank-you-copy'>Make sure all information is entered correctly, and try again.</p>
+          </>   
+        }   
       </div>
       <div className="form-row form-row-name">
         <br />

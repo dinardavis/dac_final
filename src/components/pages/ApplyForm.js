@@ -2,6 +2,7 @@ import * as React from "react";
 import ScrollToTop from '../ScrollToTop'
 import emailjs from '@emailjs/browser'
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
+import { IoCloseCircleSharp } from "react-icons/io5";
 
 export default function ApplyForm(props) {
   const [formData, setFormData] = React.useState({
@@ -16,6 +17,7 @@ export default function ApplyForm(props) {
   const [popupDisplay, setPopupDisplay] = React.useState({
     display: "none"
   })
+  const [emailSuccess, setEmailSuccess] = React.useState(false)
 
   const [formInputsValid, setFormInputsValid] = React.useState(
     {
@@ -74,8 +76,6 @@ export default function ApplyForm(props) {
   const [coverletterBtn, setCoverletterBtn] = React.useState("")
   const [coverletterInput, setCoverletterInput] = React.useState("")
 
-
-  console.log(resumeInput.value)
 
   function handleChange(event) {
     setFormData(prevFormData => {
@@ -164,10 +164,6 @@ export default function ApplyForm(props) {
   }
 
 
- 
-
- 
-
   function validateFormOnChange() {
     const emailFormat = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
     const nameFormat = /^[A-Za-z]+$/
@@ -209,7 +205,6 @@ export default function ApplyForm(props) {
     }
   }
 
-  console.log(formInputsValid)
 
   function validateFormOnSubmit() {
     const emailFormat = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
@@ -288,10 +283,17 @@ export default function ApplyForm(props) {
   function sendEmail(event) {
     event.preventDefault();
     if(formInputsValid.formValid) {
-      animatePopup()
-      emailjs.sendForm('service_d8udpus', 'template_on2rcqg', event.target, 'GEoOD8ZFwvGRuRPYl')
-      clearInputs()
-      resetFormInputs()
+      emailjs.sendForm('service_d8udpus', 'template_on2rcqg', event.target, 'GEoOD8ZFwvGRuRPY')
+        .then(function(response) {
+          setEmailSuccess(true)
+          clearInputs()
+          resetFormInputs()
+          animatePopup()
+        }) 
+        .catch(function(error) {
+          setEmailSuccess(false)
+          animatePopup()
+        });
     } else {
       validateFormOnSubmit();
     }
@@ -317,13 +319,21 @@ export default function ApplyForm(props) {
       onSubmit={sendEmail}
       >
        <div className='thank-you-popup' style={popupDisplay}>   
-        <p className='thank-you-copy success'>Success!</p>
+        <p className='thank-you-copy success'>{emailSuccess ? "Success!" : "Error!"}</p>
         <div className='checkmark-container'>
-        <IoCheckmarkCircleSharp className='thank-you-pop-checkmark'/>
+        {emailSuccess ? <IoCheckmarkCircleSharp className='thank-you-pop-checkmark'/> : <IoCloseCircleSharp className='thank-you-pop-error' />}
         </div>
-       
-        <p className='thank-you-copy'>Thank you for<br></br>your interest in joining DAC.</p>
-        <p className='thank-you-copy'>Should your skills align with our needs, we will be in touch.</p>
+        {emailSuccess ?
+          <>
+            <p className='thank-you-copy'>Thank you for<br></br>your interest in joining DAC.</p>
+            <p className='thank-you-copy'>Should your skills align with our needs, we will be in touch.</p>
+          </>    
+          : 
+          <>
+            <p className='thank-you-copy'>Uh oh! It looks like something went wrong.</p>
+            <p className='thank-you-copy'>Make sure your files aren't too big, and try again.</p>
+          </>   
+        }   
       </div>
         <div 
           className="apply-form-content"

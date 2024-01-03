@@ -3,9 +3,6 @@ import english_video from '../../../assets/imgs/firstcall_videos/firstcall_engli
 import spanish_video from '../../../assets/imgs/firstcall_videos/firstcall_spanish.mp4'
 import vietnamese_video from '../../../assets/imgs/firstcall_videos/firstcall_vietnamese.mp4'
 
-// import english_video from '../../../assets/imgs/newsarticle_videos/15th_video.mp4'
-// import spanish_video from '../../../assets/imgs/newsarticle_videos/15th_video.mp4'
-// import vietnamese_video from '../../../assets/imgs/newsarticle_videos/15th_video.mp4'
 
 
 

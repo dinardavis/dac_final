@@ -4,6 +4,7 @@
   "homepage": "https://dinardavis.github.io/dac_final",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-react": "^7.23.3",
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
