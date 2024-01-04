@@ -123,8 +123,8 @@ export default function Impact() {
           <p className='impact-copy'>This project consists of three research studies evaluating the DAC Corridor program. The studies include quantitative analyses of client self-sufficiency changes, program outcomes for participating families, and qualitative analysis of client and staff perspectives on the program's value.</p> 
 
           <ul className='impact-downloads copy-bottom'>
-            <li className='impact-link'><Link className='copy link-white-text'>FY22 First Call Snapshot</Link></li>
-            <li className='impact-link'><Link className='copy link-white-text'>Cirridor Program Debrief</Link></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FY22.Audit.pdf")} download="FY22 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY22 First Call Snapshot</a></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FY22.Audit.pdf")} download="FY22 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor Program Debrief</a></li>       
           </ul>   
         </div>
       </div>

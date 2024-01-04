@@ -2486,6 +2486,7 @@ select {
 
 .financials-downloads a {
   font-weight: 400;
+  padding-left: .3rem;
 }
 
 /* DONATE PAGE */

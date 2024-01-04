@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import singlePageTop from "../../assets/imgs/graphics/singlepage_top.png"
 import singlePageBottom from "../../assets/imgs/graphics/singlepage_bottom_white.png"
 import singlePageLeft from "../../assets/imgs/graphics/singlepage_left.png"
@@ -192,8 +191,16 @@ export default function Financials() {
         <div className='financials-copy-bottom copy-bottom'>
           <div className='financials-downloads-container'>
             <p className='section-subhead financials-section-subhead'>Financial Reports Downloads:</p>
-            <p className='financials-downloads'>Form 990s: <Link className='link-white-text'>2019</Link>, <Link className='link-white-text'>2020</Link>, <Link className='link-white-text'>2021</Link></p>
-            <p className='financials-downloads'>Financial Audits: <Link className='link-white-text'>FY20</Link>, <Link className='link-white-text'>FY21</Link>, <Link className='link-white-text'>FY22</Link></p>       
+            <div className='financials-downloads'>Form 990s:
+              <a href={require("../../Data/FinancialReports/2019.990.pdf")} download="Form 990 YR2019" target="_blank" rel="noopener noreferrer" className='link-white-text'>2019</a>, 
+              <a href={require("../../Data/FinancialReports/2020.990.pdf")} download="Form 990 YR2020" target="_blank" rel="noopener noreferrer" className='link-white-text'>2020</a>, 
+              <a href={require("../../Data/FinancialReports/2021.990.pdf")} download="Form 990 YR2021" target="_blank" rel="noopener noreferrer" className='link-white-text'>2021</a>
+            </div>
+            <div className='financials-downloads'>Financial Audits: 
+              <a href={require("../../Data/FinancialReports/FY20.Audit.pdf")} download="FY20 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY20</a>, 
+              <a href={require("../../Data/FinancialReports/FY21.Audit.pdf")} download="FY21 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY21</a>, 
+              <a href={require("../../Data/FinancialReports/FY22.Audit.pdf")} download="FY22 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY22</a>
+            </div>       
           </div>   
         </div>
         <img src={singlePageBottom} className='single-page-graphic single-page-bottom-lighter' alt='' />
