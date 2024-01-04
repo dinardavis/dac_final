@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dac_final/static/css/main.978edfa7.css",
-    "main.js": "/dac_final/static/js/main.65fc8c5f.js",
+    "main.css": "/dac_final/static/css/main.dcbd87fa.css",
+    "main.js": "/dac_final/static/js/main.02a024ee.js",
     "static/js/787.fd0d37ef.chunk.js": "/dac_final/static/js/787.fd0d37ef.chunk.js",
     "static/media/15th_video.mp4": "/dac_final/static/media/15th_video.1958ef9597f9c55769ea.mp4",
     "static/media/firstcall_english.mp4": "/dac_final/static/media/firstcall_english.27e141b8945a518083c5.mp4",
@@ -14,9 +14,15 @@
     "static/media/impact_stat_1.jpg": "/dac_final/static/media/impact_stat_1.478bf55564860d25e4cb.jpg",
     "static/media/mom_son_intro.jpg": "/dac_final/static/media/mom_son_intro.726bc193388b2dbcdb96.jpg",
     "static/media/dadandson.jpg": "/dac_final/static/media/dadandson.c9b370b36b911d102601.jpg",
+    "static/media/FY20.Audit.pdf": "/dac_final/static/media/FY20.Audit.9bec7d94b09e76233509.pdf",
+    "static/media/2021.990.pdf": "/dac_final/static/media/2021.990.d9b69d03f000b2e13ead.pdf",
+    "static/media/2020.990.pdf": "/dac_final/static/media/2020.990.9479dcb78b2722b7bdd5.pdf",
+    "static/media/2019.990.pdf": "/dac_final/static/media/2019.990.5f58c9225bff73b7a057.pdf",
     "static/media/impact_presentation.png": "/dac_final/static/media/impact_presentation.f377e3e26cfb6a3b1434.png",
     "static/media/approach_family.jpg": "/dac_final/static/media/approach_family.30b620aee15708120550.jpg",
     "static/media/donate_family.png": "/dac_final/static/media/donate_family.eae627b53b837b3e987a.png",
+    "static/media/FY21.Audit.pdf": "/dac_final/static/media/FY21.Audit.347a77e0ca71abacda57.pdf",
+    "static/media/FY22.Audit.pdf": "/dac_final/static/media/FY22.Audit.7f58d9f9fe610631c44d.pdf",
     "static/media/approach_mom.jpg": "/dac_final/static/media/approach_mom.659b41b21d459bbbeb41.jpg",
     "static/media/mentors.jpg": "/dac_final/static/media/mentors.34aa2de92d625b8e8d62.jpg",
     "static/media/handshake.jpg": "/dac_final/static/media/handshake.e8d5fd7048b50744dbad.jpg",
@@ -52,12 +58,12 @@
     "static/media/singlepage_right.png": "/dac_final/static/media/singlepage_right.328081d6b3766a396775.png",
     "static/media/footer_left.png": "/dac_final/static/media/footer_left.81e613b90dc4c6a4285a.png",
     "index.html": "/dac_final/index.html",
-    "main.978edfa7.css.map": "/dac_final/static/css/main.978edfa7.css.map",
-    "main.65fc8c5f.js.map": "/dac_final/static/js/main.65fc8c5f.js.map",
+    "main.dcbd87fa.css.map": "/dac_final/static/css/main.dcbd87fa.css.map",
+    "main.02a024ee.js.map": "/dac_final/static/js/main.02a024ee.js.map",
     "787.fd0d37ef.chunk.js.map": "/dac_final/static/js/787.fd0d37ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.978edfa7.css",
-    "static/js/main.65fc8c5f.js"
+    "static/css/main.dcbd87fa.css",
+    "static/js/main.02a024ee.js"
   ]
 }
