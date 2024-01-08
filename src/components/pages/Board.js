@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link';
 import singlePageTop from "../../assets/imgs/graphics/singlepage_top.png"
 import singlePageBottom from "../../assets/imgs/graphics/singlepage_bottom.png"
 import singlePageLeft from "../../assets/imgs/graphics/singlepage_left.png"
@@ -40,7 +40,7 @@ import { boardData } from '../../Data/boardData';
                   </div>
         })}
       
-        <p className='copy board-copy position-center'>If you are interested in serving on the DAC Board of Directors, please email Preeti Mishra at <Link className='link-blue-text'>pmishra@sccdac.org</Link>.</p>
+        <p className='copy board-copy position-center'>If you are interested in serving on the DAC Board of Directors, please email Preeti Mishra at <NavHashLink className="link-blue-text" to="mailto:pmishra@sccdac.org" target="_blank">pmishra@sccdac.org</NavHashLink>.</p>
       </div>
     </section>
 

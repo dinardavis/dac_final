@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
+import { NavHashLink } from 'react-router-hash-link';
 
 export default function StaffProfile({submenu}) {
 
@@ -27,7 +28,10 @@ export default function StaffProfile({submenu}) {
                     </div>
                     {staff.suffix_name && <h1 className='staff-suffix-name'>{staff.suffix_name}</h1>}
                     <h2 className='staff-title'>{staff.title}</h2>
-                    <p className={`staff-email ${ staff.email.length > 22 ? "small" : ""}`}><MdEmail className='staff-email-icon' /> {staff.email}</p>
+
+                    <NavHashLink 
+                    className={`staff-email ${ staff.email.length > 22 ? "small" : ""}`} to={`mailto:${staff.email}`} target="_blank"><MdEmail className='staff-email-icon' /> {staff.email}</NavHashLink>
+
                     {staff.phone && <p className='staff-phone'><BsTelephoneFill className='staff-phone-icon' /> {staff.phone}</p>}
                     {staff.bio ? 
                     <p className='show-bio-btn btn-hover' onClick={() =>toggleBio(staff.staff_id)} >{staff.first_name.slice(-1) === 's' ? `${staff.first_name}' Bio` : `${staff.first_name}'s Bio`}</p>

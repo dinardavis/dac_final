@@ -18,9 +18,11 @@ export default function NewsHome() {
           <div className='news-social-links'>
             <p className='news-social-copy'>Follow Us On Social Media: </p>
             <div className='news-socials-container'>
-              <Link to="https://www.linkedin.com/company/dependency-advocacy-center/"><TiSocialLinkedin className="news-social-icons" /></Link>
-              <Link to="https://www.instagram.com/dac_org"><TiSocialInstagram className="news-social-icons" /></Link>
-              <Link to="https://twitter.com/dac_org"><TiSocialTwitter className="news-social-icons" /></Link>
+              <Link to="https://www.linkedin.com/company/dependency-advocacy-center/" target="_blank"><TiSocialLinkedin className="news-social-icons" /></Link>
+
+              <Link to="https://www.instagram.com/dac_org" target="_blank" ><TiSocialInstagram className="news-social-icons" /></Link>
+
+              <Link to="https://twitter.com/dac_org" target="_blank"  ><TiSocialTwitter className="news-social-icons" /></Link>
             </div>
           </div>
           <Link to="/updates-articles">

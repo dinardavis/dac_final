@@ -27,7 +27,11 @@ export default function FamilyDefense() {
 
             <p className='copy'>DAC firmly upholds the belief that due process holds utmost significance in handling these delicate cases. In addition to implementing well-defined legal tactics, DAC incorporates in-house social workers and Mentor Parents to provide families with a holistic and pioneering support system. This multifaceted advocacy approach concentrates on safeguarding legal rights while actively involving the individual to improve their situation, ultimately aimed at restoring the family's unity.</p>
 
-            <p className='copy'>If an open dependency court case involves your child, the court may have assigned you an attorney from our offices. In cases where you haven't been appointed an attorney, lack their contact information, or are unsure of their identity, please reach out to us or <NavHashLink className="link-blue-text">ACCESS HELP HERE</NavHashLink>.</p>
+            <p className='copy'>If an open dependency court case involves your child, the court may have assigned you an attorney from our offices. In cases where you haven't been appointed an attorney, lack their contact information, or are unsure of their identity, please reach out to us or <NavHashLink
+              to="/#contact"
+              className="link-blue-text">
+                ACCESS HELP HERE
+            </NavHashLink>.</p>
 
             <p className='copy'>Please be aware that all discussions with your attorney are held in STRICT CONFIDENCE. Their affiliation is not with the Department of Family and Children’s Services, and as court-appointed representatives, their services are typically provided at no cost (unless the court mandates legal fees based on your financial capacity).</p>
           </div>

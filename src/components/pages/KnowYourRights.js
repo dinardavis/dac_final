@@ -15,8 +15,9 @@ export default function KnowYourRights() {
         <h1 className='kyrights section-header single-page-header'>Know Your Rights - Coming Soon</h1>
         <p className='diversity-copy copy'>Please contact our prevention programs (First Call For Families and Corridor) by phone for information and advice tailored to your individual situation.</p>
         <ul>
-          <li className='copy'> First Call Warm Line – <Link className='link-blue-text'>408-856-2992</Link></li>
-          <li className='copy'>Corridor Intake – <Link className='link-blue-text'>408-564-5142</Link></li>
+          <li className='copy'> First Call Warm Line – <NavHashLink className="link-blue-text" to="tel:+1408-856-2992" target="_blank">408-856-2992</NavHashLink>
+          </li>
+          <li className='copy'>Corridor Intake – <NavHashLink className="link-blue-text" to="tel:+1408-564-5142" target="_blank">408-564-5142</NavHashLink></li>
         </ul>
         <p className='diversity-copy copy'>Or select your desired program to contact <NavHashLink to="/#contact" className="link-blue-text">here</NavHashLink>.</p>
       </div>
