@@ -70,7 +70,7 @@ export default function MailingList() {
   function sendEmail(event) {
     event.preventDefault()
     if(formInputsValid.email) {
-      emailjs.sendForm('service_d8udpus', 'template_mwflei9', event.target, 'GEoOD8ZFwvGRuRPYl')
+      emailjs.sendForm(process.env.REACT_APP_MAILINGLIST_SERVICE_ID, process.env.REACT_APP_MAILINGLIST_TEMPLATE_ID, event.target, process.env.REACT_APP_MAILINGLIST_PUBLIC_KEY)
       clearInputs()
       resetFormInputs()
       emailField.placeholder = "Your email address"

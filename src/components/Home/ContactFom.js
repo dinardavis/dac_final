@@ -161,10 +161,10 @@ export default function Contact() {
       formInputsValid.message
     ) {
       emailjs.sendForm(
-        "service_d8udpus",
-        "template_x08v0ou",
+        process.env.REACT_APP_CONTACT_SERVICE_ID,
+        process.env.REACT_APP_CONTACT_TEMPLATE_ID,
         event.target,
-        "GEoOD8ZFwvGRuRPYl"
+        process.env.REACT_APP_CONTACT_PUBLIC_KEY
       )
       .then((response) => {
         setEmailSuccess(true)

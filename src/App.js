@@ -24,6 +24,7 @@ import FamilyDefense from './components/pages/programs/FamilyDefense';
 import Prevention from './components/pages/programs/Prevention';
 import InternshipVolunteer from './components/pages/InternshipVolunteer';
 import CareersDetail from './components/pages/CareersDetail';
+import PageNotFound from './components/pages/PageNotFound';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
+            <Route path='*' element={<PageNotFound />}/>
             <Route path="/" element={<Home />} />
 
             <Route path="mission-vision" element={<MissionVision />} />
