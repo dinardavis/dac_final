@@ -34,7 +34,7 @@ export default function Prevention() {
                 <p className='first-call-copy copy'>To inquire about any of these services, or to refer a family, please give us a call at our warm line number:</p>
                 
                 <ul className='first-call-hours-list copy'>
-                  <li><NavHashLink className="link-blue-text" to="tel:+1408-856-2992" target="_blank"><BsTelephoneFill /> (408) 856-2992</NavHashLink></li>
+                  <li><NavHashLink className="link-blue-text first-call-phone" to="tel:+1408-856-2992" target="_blank"><BsTelephoneFill /> (408) 856-2992</NavHashLink></li>
                   <li>Hours of Operation</li>
                   <li>Mon-Thurs, 9am-4pm</li>
                   <li>Evening hours: Thurs, 5pm-8pm</li>

@@ -1038,11 +1038,14 @@ section {
   font-weight: 300;
 }
 
-
 .first-call-hours-list li:first-child {
   margin-bottom: .5rem;
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+.first-call-phone {
+  font-size: 18px;
 }
 
 .first-call-disclaimer {
