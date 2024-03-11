@@ -8,10 +8,10 @@ import { Doughnut } from "react-chartjs-2";
 export default function Financials() {
 
   const [revenue, setRevenue] = React.useState({
-    grants: 3802070,
-    inkind: 38000,
-    contributions: 22156,
-    miscellaneous: 710
+    grants: 4532513,
+    inkind: 63000,
+    contributions: 21665,
+    miscellaneous: 0
   })
   
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -30,7 +30,9 @@ export default function Financials() {
   }
   
   const revenueData = {
-    labels: ['Grants & Contract Revenue', 'In-kind Contributions','Contributions','Misc'],
+    // In future add 'Misc' to the array below if there is a value for this category
+    labels: ['Grants & Contract Revenue', 'In-kind Contributions','Contributions',]
+    ,
     datasets: [
       {
         label: '$',
@@ -39,13 +41,13 @@ export default function Financials() {
           '#EF767A',
           '#861657', 
           'hsl(206, 25%, 80%)',
-          '#af253c',
+          '#004280',
         ],
         borderColor: [
           '#EF767A',
           '#861657',
           'hsl(206, 25%, 80%)',
-          '#af253c',
+          '#004280',
         ],
         borderWidth: 1,
       },
@@ -53,9 +55,9 @@ export default function Financials() {
   };
 
   const [expsenses, setExpenses] = React.useState({
-    program: 3262262,
-    management: 320048,
-    fundraising: 96519,
+    program: 3995388,
+    management: 277226,
+    fundraising: 76574,
   })
   
   ChartJS.register(ArcElement, Tooltip, Legend);
@@ -93,7 +95,7 @@ export default function Financials() {
         <div className='financials-graphic-main'>
 
   
-        <h1 className='section-header single-page-header'>FY2022 Annual Report Financials</h1>
+        <h1 className='section-header single-page-header'>FY2023 Annual Report Financials</h1>
         <div className='financials-graphic-container'>
           <div className='financials-graphic'>
             <p className='section-subhead financials-section-subhead'>Revenue & Support</p>
@@ -107,17 +109,15 @@ export default function Financials() {
             </div> : null}
           </div>
           <div className='financials-table two-column'>
-            <p className='financials-table-header financials-subhead'>Revenue & Support	FY2022</p>
+            <p className='financials-table-header financials-subhead'>Revenue & Support	FY2023</p>
             <div>Grants & Contract Revenue</div>
-            <div>$3,802,070</div> 
+            <div>$4,532,513</div> 
             <div>In-kind Contributions</div> 
-            <div>$38,000</div> 
+            <div>$63,000</div> 
             <div>Contributions</div> 
-            <div>$2,215</div> 
-            <div>Miscellaneous</div> 
-            <div>$710</div> 
-            <div className='financials-table-footer'>Total Revenue & Support</div>
-            <div className='financials-table-footer'>$3,862,936</div>
+            <div>$21,665</div> 
+            <div className='financials-table-footer-blue'>Total Revenue & Support</div>
+            <div className='financials-table-footer-blue'>$4,617,178</div>
           </div>
         </div>
 
@@ -132,15 +132,15 @@ export default function Financials() {
             </div> : null}
           </div>
           <div className='financials-table two-column'>
-            <p className='financials-table-header financials-subhead'>Revenue & Support	FY2022</p>
+            <p className='financials-table-header financials-subhead'>Functional Expenses FY2023</p>
             <div>Program</div>
-            <div>$3,262,262</div> 
+            <div>$3,995,388</div> 
             <div>Management & General</div> 
-            <div>$320,048</div> 
+            <div>$277,226</div> 
             <div>Fundraising</div> 
-            <div>$96,519</div> 
-            <div className='financials-table-footer'>Total Expenses</div>
-            <div className='financials-table-footer'>$3,678,829</div>
+            <div>$76,574</div> 
+            <div className='financials-table-footer-blue'>Total Expenses</div>
+            <div className='financials-table-footer-blue'>$4,349,188</div>
           </div>
         </div>
         
@@ -148,43 +148,45 @@ export default function Financials() {
       </div>
       <div className='financials-content-bottom burgundy-linear-gradient'>
         <div className='financials-container'>
-          <p className='section-subhead financials-section-subhead'>FY22 Statement of Financial Position</p>
+          <p className='section-subhead financials-section-subhead'>FY23 Statement of Financial Position</p>
           <div className='financials-table three-column'>
-            <div className='financials-table two-column'>
+            <div className='financials-table bottom-two-column'>
               <p className='financials-table-header financials-subhead'>Assets</p>
               <div>Cash</div>
-              <div>$958,404</div> 
+              <div>$1,324,721</div> 
               <div>Grants and contract receivables</div> 
-              <div>$700,694</div> 
+              <div>$650,813</div> 
               <div>Prepaid expenses and deposits</div> 
-              <div>$48,804</div> 
+              <div>$49,938</div>
+              <div>Operating lease right-of-use asset, net</div> 
+              <div>$118,258</div>  
               <div>Property and equipment, net</div> 
-              <div>$21,640</div> 
-              <div className='financials-table-footer'>Total Assets: </div>
-              <div className='financials-table-footer'>$1,729,542</div>
+              <div>$22,252</div> 
+              <div className='financials-table-footer-white'>Total Assets: </div>
+              <div className='financials-table-footer-white'>$2,165,982</div>
             </div>
-            <div className='financials-table two-column'>
+            <div className='financials-table bottom-two-column'>
               <p className='financials-table-header financials-subhead'>Liabilities</p>
               <div>Accounts Payable</div>
-              <div>$17,886</div> 
+              <div>$23,182</div> 
               <div>Accrued Liabilities</div> 
-              <div>$247,151</div> 
-              <div>Deferred Rent</div> 
-              <div>$28,526</div>  
-              <div className='financials-table-footer'>Total Liabilities:</div>
-              <div className='financials-table-footer'>$293,563</div>
+              <div>$308,613</div> 
+              <div>Operating lease liability </div> 
+              <div>$130,218</div>  
+              <div className='financials-table-footer-white'>Total Liabilities:</div>
+              <div className='financials-table-footer-white'>$462,013</div>
             </div>
-            <div className='financials-table two-column'>
+            <div className='financials-table bottom-two-column'>
               <p className='financials-table-header financials-subhead'>Net Assets</p>
               <div>Without donor restrictions</div>
-              <div>$1,370,806</div> 
+              <div>$1,680,109</div> 
               <div>With donor restrictions</div> 
-              <div>$65,173</div>   
-              <div className='financials-table-footer'>Total Net Assets:</div>
-              <p className='financials-table-footer'>$1,435,979</p>
+              <div>$23,860</div>   
+              <div className='financials-table-footer-white'>Total Net Assets:</div>
+              <p className='financials-table-footer-white'>$1,703,969</p>
             </div>   
           </div>
-          <div className='main-table-footer'>Total Liabilities and Net Assets: $1,729,542</div>  
+          <div className='main-table-footer'>Total Liabilities and Net Assets: $2,165,982</div>  
         </div>
   
           
@@ -197,9 +199,10 @@ export default function Financials() {
               <a href={require("../../Data/FinancialReports/2021.990.pdf")} download="Form 990 YR2021" target="_blank" rel="noopener noreferrer" className='link-white-text'>2021</a>
             </div>
             <div className='financials-downloads'>Financial Audits: 
-              <a href={require("../../Data/FinancialReports/FY20.Audit.pdf")} download="FY20 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY20</a>, 
+
               <a href={require("../../Data/FinancialReports/FY21.Audit.pdf")} download="FY21 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY21</a>, 
-              <a href={require("../../Data/FinancialReports/FY22.Audit.pdf")} download="FY22 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY22</a>
+              <a href={require("../../Data/FinancialReports/FY22.Audit.pdf")} download="FY22 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY22</a>,
+              <a href={require("../../Data/FinancialReports/FY23.Audit.pdf")} download="FY23 Financial Audit" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY23</a>
             </div>       
           </div>   
         </div>

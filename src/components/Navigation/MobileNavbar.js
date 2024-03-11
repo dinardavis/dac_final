@@ -18,8 +18,9 @@ export default function MobileNav(props) {
         <div className={`burger-lines ${props.mobileNavState? "animate-burger" : ""}`}></div>
       </div>
 
-      <div className={`mobile-nav-container ${props.mobileNavState ? "show-mobile-nav" : ""}`} onClick={props.toggleMobileMenu}>
-        {props.menuItems}
+      <div className={`mobile-nav-container ${props.mobileNavState ? "show-mobile-nav" : ""}`} 
+      >
+        {props.mobileMenuItems}
       </div>
     </div>
     

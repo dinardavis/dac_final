@@ -8,7 +8,7 @@ export default function Diversity() {
     <section className='section single-page-layout'>
       <img src={singlePageTop} className="single-page-graphic single-page-top" alt="" />
       <img src={singlePageMiddle} className="single-page-graphic single-page-middle" alt="" />
-      <div className='diversity-content position-center'>
+      <div className='diversity-content position-center copy-bottom'>
         <h1 className='diversity-header section-header single-page-header'>Dependency Advocacy Center’s Approach to Diversity, Equity, and Inclusion:</h1>
         <img className="diversity-img img-float-right" src={diversityTeam} alt='Rainbow Colored DAC Tree Logo' />
 
@@ -22,7 +22,20 @@ export default function Diversity() {
 
         <p className='diversity-copy copy'>At DAC, we are determined to increase demographic diversity within our organization. We aspire to become an actively anti-racist company and a strong ally to the communities we serve. We recognize the importance of intentional efforts to support individuals of diverse ethnicities, abilities, genders, ages, and sexual orientations.</p>
 
-        <p className='diversity-copy copy copy-bottom'>Incorporating diversity, equity, and inclusion practices is at the core of our daily work at DAC. We strive to integrate these principles into every aspect of our organization to ensure a welcoming and inclusive environment for all.</p>
+        <p className='diversity-copy copy '>Incorporating diversity, equity, and inclusion practices is at the core of our daily work at DAC. We strive to integrate these principles into every aspect of our organization to ensure a welcoming and inclusive environment for all.</p>
+
+        <p className='diversity-committee-header'>Diversity, Equity, and Inclusion Committee</p>
+        <ol className='diversity-committee-list diversity-copy'>
+          <li>Crystal Mendoza-Velarde, Chair</li>
+          <li>Kira Johnson, Vice-Chair</li>
+          <li>Nicole Radden, Secretary </li>
+          <li>Gildardo Amador</li>
+          <li>Hilary Kushins </li>
+          <li>Jaime Lopez </li>
+          <li>Maggie Law</li>
+          <li>Maggie Ross</li>
+          <li>Rehmi Ruiz</li>
+        </ol>
       </div>
     </section>
   )

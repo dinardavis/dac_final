@@ -263,7 +263,6 @@ export default function ApplyForm(props) {
   }
 
 
-
   React.useEffect(() => {
     if(
       formInputsValid.firstName && formInputsValid.lastName && formInputsValid.email &&
@@ -311,10 +310,10 @@ export default function ApplyForm(props) {
   }
 
   return (
-    <section className='contact-section'>
+    <div className="copy-bottom">
       <ScrollToTop />
       <form 
-      className="form contact-form apply-form"
+      className="contact-form intern-apply-form"
       onClick={props.toggleShowApplyForm} 
       onSubmit={sendEmail}
       >
@@ -339,7 +338,6 @@ export default function ApplyForm(props) {
           className="apply-form-content"
           onClick={e => e.stopPropagation()}
         >
-        <div className="apply-form-close-btn" onClick={props.toggleShowApplyForm}>X</div>
         <div className="form-row form-row-name">
           <br />
           <input
@@ -443,6 +441,6 @@ export default function ApplyForm(props) {
         </button>
         </div>
       </form>
-      </section>
+      </div>
   );
 }

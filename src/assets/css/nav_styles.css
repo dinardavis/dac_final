@@ -156,11 +156,18 @@
   z-index: 1;
 }
 
-.nav-item-dropdown:hover,
+.nav-links > .nav-item-dropdown:hover,
 .nav-list-item:hover {
   background-color: hsl(var(--clr-primary));
   color: hsl(var(--clr-white));
   border-radius: .2rem;
+}
+
+
+.mobile-nav-container > .dropdown-isActive {
+  background-color: hsl(var(--clr-primary));
+  color: hsl(var(--clr-white));
+  border-radius: 0rem;
 }
 
 .dropdown {

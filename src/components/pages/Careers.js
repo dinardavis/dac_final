@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from "react-router-hash-link"
 import careersData from '../../Data/careersData';
 import MailingList from './MailingList';
 import singlePageTop from "../../assets/imgs/graphics/whatwedo_top.png"
@@ -28,7 +29,7 @@ export default function Careers() {
         {careersData.length > 0 ?
         <div className='career-content'>
         <div>
-          <p className='careers-copy'>Joining DAC means having the opportunity to partner with dedicated professionals working toward the common goal of serving Santa Clara County families. Check out our available opportunities, to start your journey toward a DAC career, today!</p>
+          <p className='careers-copy'>Joining DAC means having the opportunity to partner with dedicated professionals working toward the common goal of serving Santa Clara County families. Check out our available opportunities to start your journey toward a DAC career today!</p>
         </div>
         
           <h1 className='section-subhead'>Career Openings</h1>
@@ -38,14 +39,23 @@ export default function Careers() {
           </div>
         </div>
         : ""}
-          <div className='career-content'>
+        
+        <div className='career-content'>
+          <h1 className='section-subhead'>Requests For Proposals</h1>
+
+          -<a href={require("../../Data/DEI_Consultant_RFP.pdf")} download="DAC DEI Consultant RFP" target="_blank" rel="noopener noreferrer" className="career-title-link link-blue-text">Diversity, Equity, and Inclusion (DEI) Consultant</a>
+
           <h1 className='section-subhead'>Internship & Volunteer Opportunities</h1>
 
-          <p className='careers-copy internship '>We always accepting inquiries regarding internship and volunteer positions. Please <span className='link-blue-text'>click here</span> to submit a resume and cover letter for either role. </p>  
-          </div>      
-          <div className='careers-mailing-list burgundy-linear-gradient'>
-            <MailingList />
-          </div> 
+          <p className='careers-copy internship '>We are always accepting inquiries regarding internship and volunteer opportunities. Please <span><HashLink
+            to="/internships-volunteers" className='link-blue-text'>
+              click here
+          </HashLink> </span>to submit a resume and cover letter for either role. </p> 
+        </div>     
+
+        <div className='careers-mailing-list burgundy-linear-gradient'>
+          <MailingList />
+        </div> 
     </section>
   )
 }

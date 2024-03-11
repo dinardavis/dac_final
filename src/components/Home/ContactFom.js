@@ -73,7 +73,7 @@ export default function Contact() {
 
   function validateFormInputs() {
     const emailFormat = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
-    const nameFormat = /^[A-Za-z]+$/;
+    const nameFormat = /^[A-Za-z'\- ]+$/;
 
     if (
       contactGroupField.value === "" &&

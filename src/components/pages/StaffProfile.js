@@ -16,8 +16,8 @@ export default function StaffProfile({submenu}) {
   }
 
   return (
-      staffBio.map(staff => {
-        return <div className='staff-profile'>
+      staffBio.map((staff, index) => {
+        return <div className='staff-profile' key={index}>
                   <div className='staff-img-container'>
                     <img src={staff.img} className="staff-img" alt={`${staff.first_name} ${staff.last_name}`} />
                   </div>
@@ -32,7 +32,12 @@ export default function StaffProfile({submenu}) {
                     <NavHashLink 
                     className={`staff-email ${ staff.email.length > 22 ? "small" : ""}`} to={`mailto:${staff.email}`} target="_blank"><MdEmail className='staff-email-icon' /> {staff.email}</NavHashLink>
 
-                    {staff.phone && <p className='staff-phone'><BsTelephoneFill className='staff-phone-icon' /> {staff.phone}</p>}
+                    {staff.phone && <p className='staff-phone'><BsTelephoneFill className='staff-phone-icon' /> 
+                    <NavHashLink to={`tel:+1${staff.phone}`} 
+                    className="staff-phone" target="_blank">
+                      {staff.phone}
+                    </NavHashLink>
+                    </p>}
                     {staff.bio ? 
                     <p className='show-bio-btn btn-hover' onClick={() =>toggleBio(staff.staff_id)} >{staff.first_name.slice(-1) === 's' ? `${staff.first_name}' Bio` : `${staff.first_name}'s Bio`}</p>
                     : ""}

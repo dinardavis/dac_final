@@ -35,7 +35,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
-            <Route path='*' element={<PageNotFound />}/>
+            <Route path="*" element={<PageNotFound />}/>
             <Route path="/" element={<Home />} />
 
             <Route path="mission-vision" element={<MissionVision />} />

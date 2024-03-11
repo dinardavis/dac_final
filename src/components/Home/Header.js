@@ -3,7 +3,8 @@ import { NavHashLink } from "react-router-hash-link"
 import { debounce } from '../utilities/helpers'
 import DesktopNavbar from '../Navigation/DesktopNavbar'
 import MobileNavbar from '../Navigation/MobileNavbar'
-import MenuItems from '../Navigation/MenuItems';
+import MenuItem from '../Navigation/MenuItem';
+import MobileMenuItem from '../Navigation/MobileMenuItem';
 import { menuItemData } from '../../Data/menuItemData';
 import mainLogo from "../../assets/imgs/logo.png"
 
@@ -23,7 +24,23 @@ export default function Header() {
     }))
   }
 
+  function toggleMobileDropdown(id) {
+    hideAllDropdowns()
+    setMenuData(prevData => prevData.map(data => {
+      return data.id === id ? 
+        {...data, showMenu: !data.showMenu} : data
+    }))
+  }
+
+
+  function hideAllDropdowns() {
+    setMenuData(prevData => prevData.map(data => {
+        return {...data, showMenu: false} 
+    }))
+  }
+
   function toggleMobileMenu() {
+    hideAllDropdowns()
     setMobileNavState(prevNav => !prevNav)
   }
 
@@ -54,8 +71,15 @@ export default function Header() {
     } else if(windowWidth > 800) {
       setDesktopNav(true)
       setMobileNavState(false)
+    
     }
   }, [windowWidth])
+
+  React.useEffect(() => {
+    if(desktopNav) {
+      hideAllDropdowns()
+    }
+  }, [desktopNav])
 
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -83,11 +107,21 @@ export default function Header() {
   }, [mobileNavState])
 
   const menuItems = menuData.map((menu, index) => {
-    return <MenuItems
+    return <MenuItem
             key={index}
             items={menu}
             mobileNavState={mobileNavState}
             toggleDropdown={() => toggleDropdown(menu.id)}
+          />
+  })
+
+  const mobileMenuItems = menuData.map((menu, index) => {
+    return <MobileMenuItem
+            key={index}
+            items={menu}
+            mobileNavState={mobileNavState}
+            toggleMobileDropdown={() => toggleMobileDropdown(menu.id)}
+            toggleMobileMenu={toggleMobileMenu}
           />
   })
 
@@ -104,7 +138,7 @@ export default function Header() {
       <MobileNavbar
         mobileNavState={mobileNavState}
         toggleMobileMenu={toggleMobileMenu}
-        menuItems={menuItems}
+        mobileMenuItems={mobileMenuItems}
       />}
     </header>
   )

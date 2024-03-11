@@ -108,7 +108,20 @@ export default function Impact() {
 
           <img className="impact-presentation-img img-float-left" src={presentation} alt='' />
 
-          <p className='impact-copy'>DAC Leadership and Staff improve practice and advocate for systems change by participating in various committees on a national, statewide and local level —some of which include:  the American Bar Association’s National Alliance for Parent Representation (the Steering Committee and the Interdisciplinary Subcommittee), Family Justice Initiative, Pre-Petition Family Defense National Cohort, California’s Mandated Reporting to Community Supporting Task Force, Santa Clara County’s Parent Advisory Group, Santa Clara County’s Children System of Care (AB2083) and Santa Clara County’s Family First Prevention Committee.</p>
+          <p className='impact-copy'>DAC Leadership and Staff improve practice and advocate for systems change by participating in various committees on a national, statewide and local level —some of which include:  
+
+          <ul className='impact-copy system-change-list'>
+            <li>American Bar Association’s National Alliance for Parent Representation (the Steering Committee and the Interdisciplinary Subcommittee)</li>
+            <li>Family Justice Initiative</li>
+            <li>Pre-Petition Family Defense National Cohort</li>
+            <li>California’s Mandated Reporting to Community Supporting Task Force</li>
+            <li>Santa Clara County’s Parent Advisory Group</li>
+            <li>Santa Clara County’s Children System of Care (AB2083)</li>
+            <li>Santa Clara County’s Family First Prevention Committee</li>
+          </ul>
+          </p>
+          
+         
 
           <p className='impact-copy'>In addition, DAC leadership and staff educate and train those involved or impacted by the child welfare system.  Mentor Parents educate judges, Court Appointed Special Advocates (CASAs), and Department of Family and Children’s Services social workers about the child welfare system from the perspective of those with lived experience.  Corridor and First Call for Families’ teams conduct Know Your Rights presentations to community members and system partners.  Finally, DAC staff has presented at local, state and national conferences on various topics, including utilizing an interdisciplinary model in family defense, developing a pre-petition program, and building a mentor parent program.</p> 
           </div>
@@ -122,8 +135,9 @@ export default function Impact() {
           <p className='impact-copy'>This project consists of three research studies evaluating the DAC Corridor program. The studies include quantitative analyses of client self-sufficiency changes, program outcomes for participating families, and qualitative analysis of client and staff perspectives on the program's value.</p> 
 
           <ul className='impact-downloads copy-bottom'>
-            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="FY22 First Call Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>FY22 First Call Snapshot</a></li>
-            <li className='impact-link'><a href={require("../../Data/FinancialReports/DACCorridorEval.pdf")} download="Corridor Program Debrief" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor Program Debrief</a></li>       
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="FY22 First Call Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY23 Snapshot</a></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="FY22 First Call Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY22 Snapshot </a></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/DACCorridorEval.pdf")} download="Corridor Program Debrief" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor AY19 Program Debrief</a></li>       
           </ul>   
         </div>
       </div>

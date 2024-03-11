@@ -30,7 +30,7 @@ export default function ApproachHome() {
           </div>
           <div className='approach-team team-3 approach-background darkblue-linear-gradient'>
             <img className='team-img' src={mentor} alt=''/>
-            <p className='team-copy'>Parent Mentors that have lived experience in the child welfare system</p>
+            <p className='team-copy'>Mentor Parents that have lived experience in the child welfare system</p>
           </div>
         </div>
 
@@ -53,7 +53,7 @@ export default function ApproachHome() {
           </div>
 
           <div div className='approach-copy-container'>
-            <p className='copy'>In Santa Clara County, African American and Latino children living in poverty are far from likely to enter foster care- a system that regularly serves as a pipeline to incarceration, substance abuse, sex trafficking, and homelessness.</p>
+            <p className='copy'>In Santa Clara County, African American and Latino children living in poverty are far more likely to enter foster care- a system that regularly serves as a pipeline to incarceration, substance abuse, sex trafficking, and homelessness.</p>
             
             <p className='approach-copy-bottom copy'>Without effective intervention strategies that target long-term family wellbeing, the parents and children served by DAC are particularly susceptible to repeated cycles of separation and court involvement.</p>
           </div>     

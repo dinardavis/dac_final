@@ -118,6 +118,14 @@
   height: 14rem;
 }
 
+.phone-graphic-home {
+  position: absolute;
+  top: 1rem;
+  left: 10%;
+  height: 45rem;
+  z-index: -1;
+}
+
 .news-graphic-home {
   position: absolute;
   bottom: 0;

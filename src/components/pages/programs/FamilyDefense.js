@@ -13,7 +13,7 @@ export default function FamilyDefense() {
       <div className='programs-section-background intro-content-container lightblue-gradient'>
           <img src={singlePageTop} className='section-graphic single-page-graphic programs-top' alt='' />
           <div className='program-content-container'>
-            <h1 className='section-header single-page-header programs-header'>Court Appointed Legal Defense</h1>
+            <h1 className='section-header single-page-header programs-header'>Court Appointed Family Defense</h1>
             {/* <h1 className='section-header single-page-header programs-header'>Providing Holistic Support to Families in the Child Welfare System</h1>
             <p className='copy'>DAC was founded in 2008 by family defense attorneys with a passion for helping vulnerable families involved in the child welfare system.  DAC believes that these families deserve a meaningful path to justice, self-sufficiency, and well-being.</p> */}
           {/* <div className='subhead-container'>
@@ -47,11 +47,11 @@ export default function FamilyDefense() {
 
             <p className='copy text-left'>Social workers utilize a strengths-based model of practice acknowledging that every parent who enters this system comes with their own unique story, background and skills and creating a personalized plan for each client.</p>
 
-            <p className='copy text-left'>DAC has been innovative in utilizing social workers in concert with traditional legal services to provide the highest level of representation for its clients. A social worker’s educational training, experience, and role complement that of an attorney and allow them to strategize with the attorney and parent mentor on a case to best serve each client.</p>
+            <p className='copy text-left'>DAC has been innovative in utilizing social workers in concert with traditional legal services to provide the highest level of representation for its clients. A social worker’s educational training, experience, and role complement that of an attorney and allow them to strategize with the attorney and mentor parent  on a case to best serve each client.</p>
 
             <p className='copy text-left'>The primary purpose of utilizing DAC social workers is to provide clinical expertise to support and enhance the legal position asserted on behalf of the client.</p>
             
-            <p className='text-center copy-thin'>* All DAC Social Workers operate under attorney-client privilege and are not mandated reporters.</p>
+            <p className='copy text-left'>* All DAC Social Workers operate under attorney-client privilege and are not mandated reporters.</p>
           </div>
           <img src={singlePageLeft} className='section-graphic single-page-graphic programs-left' alt='' />
         </div>

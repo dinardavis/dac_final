@@ -19,7 +19,7 @@ export default function Donate() {
           <div className='donate-img-container donate-img-container-mobile'>
             <img src={family} className="donate-img" alt='Mother, Father and child smiling and embracing'/>
             <p className='donate-quote'><BiSolidQuoteLeft className='donate-quote-left'></BiSolidQuoteLeft>
-            My team (attorney, social worker and parent mentor) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
+            My team (attorney, social worker and mentor parent) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
           </div>  
 
           <form action="https://www.paypal.com/donate" method='post' target="_blank">
@@ -41,7 +41,7 @@ export default function Donate() {
         <div className='donate-img-container'>
           <img src={family} className="donate-img" alt='Mother, Father and child smiling and embracing'/>
           <p className='donate-quote'><BiSolidQuoteLeft className='donate-quote-left'></BiSolidQuoteLeft>
-          My team (attorney, social worker and parent mentor) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
+          My team (attorney, social worker and mentor parent) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
         </div>  
       </div>
     </section>

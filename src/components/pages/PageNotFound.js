@@ -1,9 +1,8 @@
 import React from 'react'
 import singlePageTop from "../../assets/imgs/graphics/whatwedo_top.png"
 import singlePageMiddle from "../../assets/imgs/graphics/whatwedo_left.png"
-import { NavHashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import BackButton from "../BackButton";
+
 
 export default function PageNotFound() {
   return (
