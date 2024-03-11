@@ -24,9 +24,12 @@ export default function MobileMenuItem(props) {
           <div
             className={`${props.items.showMenu ? "dropdown-isActive" : ""} nav-item-dropdown nav-item`}
           >
-            <div className="nav-item-title">
-              {props.items.title} {props.mobileNavState && <FaChevronDown   className="mobile-dropdown-arrow"
+            <div 
               onClick={props.toggleMobileDropdown}
+              className="nav-item-title"
+            >
+              {props.items.title} {props.mobileNavState && <FaChevronDown   className="mobile-dropdown-arrow"
+           
               />}</div>
                 <Dropdown 
                   positionRight={true}
@@ -39,12 +42,12 @@ export default function MobileMenuItem(props) {
         :
         (
         <div
+           onClick={props.toggleMobileDropdown}
            className={`${props.items.showMenu ? "dropdown-isActive" : ""} nav-item-dropdown nav-item`}
         >
             <div className="nav-item-title">{props.items.title} {props.mobileNavState && 
             <FaChevronDown 
-              className="mobile-dropdown-arrow" 
-              onClick={props.toggleMobileDropdown}
+              className="mobile-dropdown-arrow"   
             />}</div>
             <Dropdown 
               showMenu={props.items.showMenu}
