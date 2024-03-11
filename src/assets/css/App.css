@@ -3292,6 +3292,7 @@ select {
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 7px;
+  line-height: 1.5;
 }
 
 .diversity-committee-list {
@@ -3963,6 +3964,12 @@ select {
 
   /* FINANCIALS PAGE  */
 
+  .two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 235px));
+    gap: .6rem 1rem;
+  }
+
   .financials-content-bottom {
     padding: 2rem;
   }
@@ -4543,7 +4550,6 @@ select {
     padding: 2rem;
   }
 
-
   .carousel-items-container {
     width: 100%;
     margin: 0rem 0rem 1rem 0;
@@ -4655,6 +4661,12 @@ select {
   .mission-graphic-marker-3 {
     position: absolute;
     top: 16.5rem;
+  }
+
+  /* CAREERS PAGE  */
+
+  .career-title-link {
+    line-height: 1.4;
   }
 
 }
