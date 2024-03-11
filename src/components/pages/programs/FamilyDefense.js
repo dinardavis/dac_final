@@ -69,7 +69,7 @@ export default function FamilyDefense() {
 
           <p className='copy'>The role of the Mentor Parent is to provide support, guidance and motivation to those parents whose children have been or are currently at risk of being removed from their care. Mentor Parents work directly with DAC attorneys as part of an interdisciplinary legal team to encourage early engagement in rehabilitative services and to provide guidance to parents as they navigate the child welfare system.</p>
           
-          <p className='copy'>Learn more about the program <NavHashLink
+          <p className='copy'>Get more information about our programs <NavHashLink
               to="/#contact"
               className="link-white-text">
                 here
