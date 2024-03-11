@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dac_final/static/css/main.bc6f03ac.css",
-    "main.js": "/dac_final/static/js/main.11645a79.js",
+    "main.css": "/dac_final/static/css/main.fa5b06e5.css",
+    "main.js": "/dac_final/static/js/main.feddbe11.js",
     "static/js/787.fd0d37ef.chunk.js": "/dac_final/static/js/787.fd0d37ef.chunk.js",
     "static/media/15th_video.mp4": "/dac_final/static/media/15th_video.1958ef9597f9c55769ea.mp4",
     "static/media/firstcall_english.mp4": "/dac_final/static/media/firstcall_english.27e141b8945a518083c5.mp4",
@@ -11,11 +11,11 @@
     "static/media/impact_mom_infant.jpg": "/dac_final/static/media/impact_mom_infant.94ac0bce3483c761756f.jpg",
     "static/media/location.png": "/dac_final/static/media/location.7f80d9f493cadc4d0402.png",
     "static/media/impact_mom_daughter.jpg": "/dac_final/static/media/impact_mom_daughter.b21826eadea721fd8c7b.jpg",
+    "static/media/family_collage.png": "/dac_final/static/media/family_collage.136111cb92998dba2808.png",
     "static/media/impact_stat_1.jpg": "/dac_final/static/media/impact_stat_1.478bf55564860d25e4cb.jpg",
     "static/media/mom_son_intro.jpg": "/dac_final/static/media/mom_son_intro.726bc193388b2dbcdb96.jpg",
     "static/media/FirstCallSnapshot2022.pdf": "/dac_final/static/media/FirstCallSnapshot2022.13a4c1aaccf8531885cf.pdf",
     "static/media/dadandson.jpg": "/dac_final/static/media/dadandson.c9b370b36b911d102601.jpg",
-    "static/media/FY20.Audit.pdf": "/dac_final/static/media/FY20.Audit.9bec7d94b09e76233509.pdf",
     "static/media/2021.990.pdf": "/dac_final/static/media/2021.990.d9b69d03f000b2e13ead.pdf",
     "static/media/2020.990.pdf": "/dac_final/static/media/2020.990.9479dcb78b2722b7bdd5.pdf",
     "static/media/2019.990.pdf": "/dac_final/static/media/2019.990.5f58c9225bff73b7a057.pdf",
@@ -25,9 +25,11 @@
     "static/media/donate_family.png": "/dac_final/static/media/donate_family.eae627b53b837b3e987a.png",
     "static/media/FY21.Audit.pdf": "/dac_final/static/media/FY21.Audit.347a77e0ca71abacda57.pdf",
     "static/media/FY22.Audit.pdf": "/dac_final/static/media/FY22.Audit.7f58d9f9fe610631c44d.pdf",
+    "static/media/FY23.Audit.pdf": "/dac_final/static/media/FY23.Audit.4377297aef080e2e8a2f.pdf",
     "static/media/approach_mom.jpg": "/dac_final/static/media/approach_mom.659b41b21d459bbbeb41.jpg",
     "static/media/mentors.jpg": "/dac_final/static/media/mentors.34aa2de92d625b8e8d62.jpg",
     "static/media/handshake.jpg": "/dac_final/static/media/handshake.e8d5fd7048b50744dbad.jpg",
+    "static/media/DEI_Consultant_RFP.pdf": "/dac_final/static/media/DEI_Consultant_RFP.324f4afe028081e9fe3e.pdf",
     "static/media/attorneys.jpg": "/dac_final/static/media/attorneys.a45000a744146f19adb6.jpg",
     "static/media/logo.png": "/dac_final/static/media/logo.f26cd80f203342593180.png",
     "static/media/corridor.jpg": "/dac_final/static/media/corridor.9c0e318c4f777df8304f.jpg",
@@ -38,6 +40,7 @@
     "static/media/impact_father_son.jpg": "/dac_final/static/media/impact_father_son.436885159d0f0cec2b10.jpg",
     "static/media/notext_logo.png": "/dac_final/static/media/notext_logo.0124caf16cae269c0f7c.png",
     "static/media/news_graphic.png": "/dac_final/static/media/news_graphic.4404d3f312fda307d9b9.png",
+    "static/media/phone_graphic.png": "/dac_final/static/media/phone_graphic.4404d3f312fda307d9b9.png",
     "static/media/contact_right.png": "/dac_final/static/media/contact_right.83c4e9b4232899efa9d7.png",
     "static/media/attorney_silhouette.png": "/dac_final/static/media/attorney_silhouette.4dc845deec20fb53e96d.png",
     "static/media/singlepage_bottom.png": "/dac_final/static/media/singlepage_bottom.a8c45cfe1ecba17712ef.png",
@@ -60,12 +63,12 @@
     "static/media/singlepage_right.png": "/dac_final/static/media/singlepage_right.328081d6b3766a396775.png",
     "static/media/footer_left.png": "/dac_final/static/media/footer_left.81e613b90dc4c6a4285a.png",
     "index.html": "/dac_final/index.html",
-    "main.bc6f03ac.css.map": "/dac_final/static/css/main.bc6f03ac.css.map",
-    "main.11645a79.js.map": "/dac_final/static/js/main.11645a79.js.map",
+    "main.fa5b06e5.css.map": "/dac_final/static/css/main.fa5b06e5.css.map",
+    "main.feddbe11.js.map": "/dac_final/static/js/main.feddbe11.js.map",
     "787.fd0d37ef.chunk.js.map": "/dac_final/static/js/787.fd0d37ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc6f03ac.css",
-    "static/js/main.11645a79.js"
+    "static/css/main.fa5b06e5.css",
+    "static/js/main.feddbe11.js"
   ]
 }
