@@ -25,17 +25,16 @@ export default function Header() {
   }
 
   function toggleMobileDropdown(id) {
-    hideAllDropdowns()
     setMenuData(prevData => prevData.map(data => {
       return data.id === id ? 
-        {...data, showMenu: !data.showMenu} : data
+        {...data, showMenu: !data.showMenu} :  {...data, showMenu: false}
     }))
   }
 
-
   function hideAllDropdowns() {
     setMenuData(prevData => prevData.map(data => {
-        return {...data, showMenu: false} 
+      return data.showMenu ? 
+        {...data, showMenu: false} : data
     }))
   }
 
