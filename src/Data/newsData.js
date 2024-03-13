@@ -1,6 +1,27 @@
 const newsData = [
+
+
+  //  ARTICLE TEMPLATE DATA: COPY/PASTE NEW ARTICLE AND FILL IN INFO
+  // {
+  //   id: 5,
+  //   title: "",
+  //   date: "November 3, 2023",
+  //   author: "",
+  //   preface: [""], 
+  //   video:"",
+  //   body: [""],
+  //   footer: [""],
+  //   copyright: [""],
+  //   article_link_copy: "",
+  //   article_link: "",
+  //   img: "./images/news_images/DAC_15.jpg",
+  //   imgDesc: "",
+  //   url: "/updates-articles"
+  // },
+
+
   {
-    id: 0,
+    id: 5,
     title: "Dependency Advocacy Center Turns 15!",
     date: "November 3, 2023",
     author: "",
@@ -16,7 +37,7 @@ const newsData = [
     url: "/updates-articles"
   },
   {
-    id: 1,
+    id: 4,
     title: "SSA Director Receives AnnaLisa Chung Award",
     date: "October 31, 2023",
     author: "",
@@ -32,7 +53,7 @@ const newsData = [
     url: "/updates-articles"
   },
   {
-    id: 0,
+    id: 3,
     title: "DAC Announces Selection of Next CEO!",
     date: "September 2, 2023",
     author: "",
@@ -64,7 +85,7 @@ const newsData = [
     url: "/updates-articles"
   }, 
   {
-    id: 3,
+    id: 1,
     title: "DAC’s Corridor Program Presented in Washington D.C.",
     date: "April 14, 2019",
     author: "",
@@ -80,7 +101,7 @@ const newsData = [
     url: "/updates-articles"
   },
   {
-    id: 4,
+    id: 0,
     title: "DAC Recognized by California State AssemblyMember Ash Kalra",
     date: "November 27, 2018",
     author: "",
