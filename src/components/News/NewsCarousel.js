@@ -61,6 +61,7 @@ export default function NewsCarousel() {
                 key={item.id}
                 id={item.id}
                 title={item.title}
+                date={item.date}
                 body={item.body}
                 img={item.img}
                 url={item.url}

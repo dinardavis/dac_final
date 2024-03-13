@@ -13,6 +13,7 @@ export default function NewsMain() {
           <img className="article-img" src={`${article.img}`} alt={article.imgDesc} />
           <div className="article-copy">
             <h1 className="article-title">{article.title}</h1>
+            <p className="article-date">{article.date}</p>
             <p className="article-body">{article.body[0].slice(0,250)}<span>{article.body[0].length > 249 ? "..." : ""}</span></p>
             <Link to={`/updates-articles/${article.id}`} className='article-readmore'>
               <p className="link-blue-text">Full Article</p><BiSolidRightArrow />

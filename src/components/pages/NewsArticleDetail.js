@@ -45,7 +45,9 @@ export default function NewsArticleDetail() {
           <div className="article-detail-container">
             <BackButton />
             <div className="article-detail-content" >
-              <div className="section-header article-detail-header">{currentArticle[0].title}</div>
+              <div className="section-header article-detail-header">{currentArticle[0].title}
+              <p className="article-detail-date">{currentArticle[0].date}</p>
+            </div>
               <img className="article-detail-img" src={`.${currentArticle[0].img}`} alt={currentArticle[0].imgDesc} />
             </div>
            
