@@ -17,7 +17,7 @@ export default function ApproachHome() {
       <img src={approachGraphicRight} className="section-graphic approach-right" alt="" />
       <div className='approach-content'>
         <h1 className='section-header position-center'>DAC’s Holistic Approach</h1>
-        <p className='approach-copy copy position-center'>Dependency Advocacy Center (DAC) serves Santa Clara’s County parents and some children involved in the child welfare system. DAC’s multi-pronged approach to advocacy, which focuses on both protecting the client’s legal rights while simultaneously engaging the client to better his or her circumstances, is targeted toward making the family whole again. DAC supports families involved in the system through an interdisciplinary team.</p>
+        <p className='approach-copy copy position-center'>Dependency Advocacy Center (DAC) serves Santa Clara’s County parents and children involved in the child welfare system. DAC’s multi-pronged approach to advocacy, which focuses on both protecting the client’s legal rights while simultaneously engaging the client to better their circumstances, is targeted toward making the family whole again. DAC supports families involved in the system through an interdisciplinary team.</p>
 
         <div className="approach-graphic">
           <div className='approach-team team-1 approach-background burgundy-linear-gradient'>
@@ -40,7 +40,7 @@ export default function ApproachHome() {
    
 
       <div className='approach-content approach-content-bottom pink-linear-gradient'>
-        <h1 className='approach-header section-header'>Breaking cycles of System involvement</h1>
+        <h1 className='approach-header section-header'>Breaking Cycles of System Involvement</h1>
         
         <div className='approach-content-container'>
           <div className='approach-img-container-main'>
@@ -53,7 +53,7 @@ export default function ApproachHome() {
           </div>
 
           <div div className='approach-copy-container'>
-            <p className='copy'>In Santa Clara County, African American and Latino children living in poverty are far more likely to enter foster care- a system that regularly serves as a pipeline to incarceration, substance abuse, sex trafficking, and homelessness.</p>
+            <p className='copy'>In Santa Clara County, African American and Latino children living in poverty are far more likely to enter foster care &mdash; a system that regularly serves as a pipeline to incarceration, substance abuse, sex trafficking, and homelessness.</p>
             
             <p className='approach-copy-bottom copy'>Without effective intervention strategies that target long-term family wellbeing, the parents and children served by DAC are particularly susceptible to repeated cycles of separation and court involvement.</p>
           </div>     

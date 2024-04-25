@@ -7,7 +7,7 @@ export default function PhoneHome() {
     <section id="phone" className="phone-section section">
       {/* <img src={newsGraphic} className="phone-graphic-home section-graphic" alt='' /> */}
       <div className='phone-copy-container'> 
-        <p className='copy phone-copy'>If you<span className='copy-bold'> <span className='phone-copy-underline'>have</span> a court case</span> in Santa Clara County that involves CPS (Department of Family and Children Services) and need legal representation:
+        <p className='copy phone-copy'>If you<span className='copy-bold'> <span className='phone-copy-underline'>have</span> a court case</span> in Santa Clara County that involves CPS (Department of Family and Children's Services) and need legal representation:
         </p>
      
         <NavHashLink className="phone-btn" to="tel:+1408-995-0714" target="_blank"> Call Us - (408) 995-0714</NavHashLink>

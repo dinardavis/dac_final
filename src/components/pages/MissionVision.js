@@ -29,7 +29,7 @@ export default function MissionVision() {
               </div><BiSolidRightArrow className='mission-step-icon'/>
             </div>
             <div className='mission-step-copy'>
-              <p>Empower Families to break cycles of system-involvement and marginalization</p>
+              <p>Empower families to break cycles of system involvement and marginalization</p>
             </div>
           </div>
           <div className='mission-step pink-linear-gradient'>

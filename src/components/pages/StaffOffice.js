@@ -19,7 +19,8 @@ export default function StaffOffice({ item, toggleOffice }) {
           <BsArrowUpCircle className={`toggle-office-icon ${item.showOffice ? "open" : ''}`} />
         </div> 
           {item.showOffice && <div className='office-content'>
-            <p className='office-address'>{item.office_address}</p>
+            <p className='office-address'>{item.office_address_street}</p>
+            <p className='office-address'>{item.office_address_city}</p>
             {item.office_phone ? <p className='office-phone'>{item.office_phone}</p> : ""}
             {item.office_fax ? <p className='office-fax'>{item.office_fax}</p> : ""}
             <div className='staff-profiles'>

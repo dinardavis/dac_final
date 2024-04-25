@@ -14,7 +14,7 @@ export default function Donate() {
         <div className='donate-copy-container' >
           <h1 className='donate-header text-center'>Support<br></br>Dependency Advocacy Center Today! </h1>
 
-          <p className='copy donate-copy'>Dependency Advocacy Center (DAC) gratefully accepts donations of any size. DAC is a tax-exempt 501(c)3 nonprofit organization and your generous gift is tax-deductible as allowed by law. Your donation will go where it is needed most to support our work, unless you specify a particular use for your gift. Under the direction of the Board of Directors, DAC retains complete control over the use and distribution of donated funds in furtherance of its mission.</p>
+          <p className='copy donate-copy'>Dependency Advocacy Center (DAC) gratefully accepts donations of any size. DAC is a tax-exempt 501(c)(3) nonprofit organization and your generous gift is tax-deductible as allowed by law. Your donation will go where it is needed most to support our work, unless you specify a particular use for your gift. Under the direction of the Board of Directors, DAC retains complete control over the use and distribution of donated funds in furtherance of its mission.</p>
 
           <div className='donate-img-container donate-img-container-mobile'>
             <img src={family} className="donate-img" alt='Mother, Father and child smiling and embracing'/>
@@ -41,7 +41,7 @@ export default function Donate() {
         <div className='donate-img-container'>
           <img src={family} className="donate-img" alt='Mother, Father and child smiling and embracing'/>
           <p className='donate-quote'><BiSolidQuoteLeft className='donate-quote-left'></BiSolidQuoteLeft>
-          My team (attorney, social worker and mentor parent) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
+          My team (attorney, [DAC] social worker and mentor parent) really understands me. They get me, they help me, and they want to see me succeed.<BiSolidQuoteRight className='donate-quote-right'></BiSolidQuoteRight></p>
         </div>  
       </div>
     </section>

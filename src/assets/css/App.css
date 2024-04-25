@@ -9,6 +9,8 @@
   --clr-background-3: 210, 60%, 43%; /*  mid-blue */
   --clr-primary: 209, 100%, 25%; /* dark-blue */
   --clr-secondary: 206, 25%, 80%; /* light-blue */
+  --clr-stat: 210, 44%, 63%; /* stat-blue */
+  --clr-logo-grey: 232, 13%, 55%;
   --clr-white: 0, 0%, 100%;
   --clr-gold: 37, 100%, 62%;
   --clr-burgundy: #861657;
@@ -187,6 +189,10 @@ section {
   text-decoration: underline;
   text-underline-offset: 7px;
   text-decoration-thickness: 2px;
+}
+
+.italicize {
+  font-style: italic;
 }
 
 .phone-copy-underline {
@@ -1918,7 +1924,8 @@ select {
 
 .offices-container {
   position: relative;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   border: 2.5px solid hsl(var(--clr-primary));
   border-radius: .2rem;
   background-color: hsl(var(--clr-white));
@@ -1927,11 +1934,12 @@ select {
 }
 
 .office-content {
+  width: 100%;
   animation: growDown 500ms ease-in-out;
   animation-fill-mode: forwards;
   transform-origin: top center;
   line-height: 1;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
 }
 
 @keyframes growDown {
@@ -1979,10 +1987,6 @@ select {
   font-size: 1.4rem;
 }
 
-.office-address {
-  max-width: 280px;
-}
-
 .office-phone {
   margin: .5rem 0;
 }
@@ -1992,34 +1996,50 @@ select {
   font-size: 1.5rem;
 }
 
+
+
+
 .staff-profiles {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  width: 100%;
   flex-wrap: wrap;
   min-height: 150px;
-  max-height: 650px;
+  max-height: 470px;
   overflow-x: scroll;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .staff-profile {
   display: flex;
-  flex: 1 auto;
-  height: 100%;
-  height: 290px;
+  justify-content: space-between;
   padding: .5rem;
-  margin-right: 1rem;
+  margin: 0 1rem 1rem 0;
+}
+
+.staff-profile-left {
+  display: flex;
+}
+
+.staff-profile.full-width {
+  grid-column: 1/-1;
+  max-height: 391px;
 }
 
 .staff-info-container {
   display: flex;
   flex-direction: column;
-  min-width: 250px;
   height: 100%;
-  padding: 0 1.5rem;
+  max-width: 190px;
+  min-width: 190px;
+  margin-left: 1rem;
 }
 
 .staff-img {
   height: 100%;
+  width: 100%;
+  max-width: 250px;
   object-fit: cover;
   border-radius: .2rem;
   box-shadow: 10px 10px 10px hsl(var(--clr-primary), .3);
@@ -2073,11 +2093,10 @@ select {
 }
 
 .staff-bio {
-  padding-right: 1rem;
+  padding: 0 .5rem 0 1rem;
   overflow: scroll;
   line-height: 1.2;
-  min-width: 300px;
-  max-width: 700px;
+  width: 55%;
 }
 
 .toggle-office-icon {
@@ -2093,7 +2112,7 @@ select {
 }
 
 .show-bio-btn {
-  padding: .3rem;
+  padding: .6rem .3rem;
   margin-top: .5rem;
   background-color: hsl(var(--clr-primary));
   font-size: .9rem;
@@ -2748,10 +2767,6 @@ select {
   margin-left: .3rem;
 }
 
-.career-detail-header {
-  max-width: 400px;
-}
-
 .career-detail-copy {
   width: 100%;
   max-width: 800px;
@@ -3103,6 +3118,17 @@ select {
   z-index: -1;
 }
 
+.impact-stat-asterisk {
+  position: absolute;
+  font-size: .8rem;
+  padding-top: .4rem;
+}
+
+.impact-stat-disclaimer {
+  font-size: .7rem;
+  padding-top: .5rem;
+}
+
 .stat-1 {
   background-color: hsl(var(--clr-primary), .7);
 }
@@ -3113,7 +3139,7 @@ select {
 }
 
 .stat-3 {
-  background-color: hsl(var(--clr-secondary), .8);
+  background-color: hsl(var(--clr-stat), .8);
 }
 
 .stat-1 .line-1{
@@ -3294,6 +3320,14 @@ select {
 /* DIVERSITY SECTION */
 .diversity-header {
   max-width: 800px;
+  margin-bottom: 1.5rem;
+}
+
+.diversity-subhead {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  
 }
 
 .diversity-img {
@@ -3607,74 +3641,6 @@ select {
     font-size: 1.2rem;
   }
 
-  .staff-profile {
-    flex-direction: column;
-    width: 100%;
-    max-height: 100%;
-    height: auto;
-    align-self: flex-start;
-    justify-content: space-around;
-    margin: 1rem;
-  }
-
-  .staff-info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-width: 250px;
-    max-height: 180px;
-    height: 180px;
-    padding: 0;
-  }
-
-  .staff-img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 1.5rem;
-  }
-
-  .staff-firstname,
-  .staff-lastname {
-    font-size: 2rem;
-  }
-
-  .staff-title {
-    font-size: 1.4rem;
-    max-width: 100%;
-  }
-
-  .staff-email {
-    margin-top: 1rem;
-  }
-
-  .staff-email,
-  .staff-phone {
-    font-size: 1.2rem;
-  }
-
-  .staff-email.small {
-    font-size: 1.2rem;
-    letter-spacing: 0;
-  }
-
-  .show-bio-btn {
-    padding: .8rem 1.5rem;
-    font-size: 1.2rem;
-  }
-
-  .staff-bio {
-    margin-top: 1rem;
-    min-width: auto;
-  }
-
-  .staff-name-container {
-    display: flex;
-  }
-
-  .staff-name-container > .staff-lastname {
-    margin-left: .5rem;
-  }
-
 
   /* DONATE PAGE */
 
@@ -3764,7 +3730,6 @@ select {
     z-index: 1;
   }
 
-
   .mission-bottom-content {
     display: flex;
     flex-direction: column;
@@ -3779,6 +3744,10 @@ select {
 
   .family-collage.img-float-right {
     margin: 0;
+  }
+
+  .impact-stat-disclaimer {
+    padding-top: 0;
   }
   
 
@@ -3873,21 +3842,6 @@ select {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px) {
 
   .phone-section {
@@ -3907,7 +3861,6 @@ select {
   .phone-btn.desktop {
     display: none;
   }
-
 
   .approach-content-container {
     display: flex;
@@ -3979,6 +3932,85 @@ select {
     margin: 0;
   }
 
+  .staff-profiles {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-profile {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .staff-profile-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .staff-profile.full-width {
+    grid-column: 1/-1;
+    max-height: 100%;
+  }
+  
+  .staff-info-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 1rem;
+    text-align: right;
+  }
+  
+  .staff-img {
+    height: 100%;
+    width: 100%;
+    min-width: 250px;
+    max-width: 330px;
+    object-fit: cover;
+    border-radius: .2rem;
+    box-shadow: 10px 10px 10px hsl(var(--clr-primary), .3);
+  }
+
+  .staff-firstname,
+  .staff-lastname {
+    font-size: 2rem;
+  }
+
+  .staff-title {
+    align-self: flex-end;
+    font-size: 1.4rem;
+    max-width: 100%;
+  }
+
+  .staff-email {
+    align-self: flex-end;
+    margin-top: .5rem;
+  }
+
+  .staff-email,
+  .staff-phone {
+    font-size: 1rem;
+  }
+
+  .staff-email.small {
+    font-size: .8rem;
+    letter-spacing: 0;
+  }
+
+  .show-bio-btn {
+    padding: .8rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .staff-bio {
+    padding: 0;
+    margin-top: 1rem;
+    min-width: 100%;
+    max-height: 175px;
+    overflow-x: scroll;
+  }
+
+
+
   /* FINANCIALS PAGE  */
 
   .two-column {
@@ -4005,15 +4037,6 @@ select {
     line-height: 1.2;
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4273,17 +4296,10 @@ select {
 
   /* STAFF PAGE  */
 
-  .staff-copy {
-    text-align: left;
+  .staff-img {
+    min-width: auto;
   }
 
-  .staff-name-container {
-    display: flex;
-  }
-
-  .staff-name-container > .staff-lastname {
-    margin-left: .5rem;
-  }
 
   
   /* BOARD PAGE  */
@@ -4519,6 +4535,63 @@ select {
   }
 }
 
+@media screen and (max-width: 600px) {
+  
+  /* STAFF PAGE  */
+
+  .staff-profile {
+    flex-direction: column;
+    max-height: 100%;
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+
+  .staff-profile-left {
+    flex-direction: column;
+  }
+  
+  .staff-profile.full-width {
+    grid-column: 1/-1;
+    max-height: 100%;
+  }
+  
+  .staff-info-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .staff-img {
+    max-width: 100%;
+  }
+
+  .staff-name-container {
+    display: flex;
+  }
+
+  .staff-lastname {
+    margin-left: .5rem;
+  }
+
+  .staff-title {
+    align-self: flex-start;
+  }
+
+  .staff-email {
+    align-self: flex-start;
+    font-size: 1.2rem;
+  }
+
+  .staff-email.small {
+    font-size: 1.2rem;
+  }
+
+}
+
 
 
 
@@ -4620,9 +4693,13 @@ select {
     font-size: 1.2rem;
   }
 
+  .staff-email {
+    align-self: flex-start;
+    font-size: .95rem;
+  }
+
   .staff-email.small {
-    font-size: 1rem;
-    letter-spacing: 0;
+    font-size: .95rem;
   }
 
   .donate-img {

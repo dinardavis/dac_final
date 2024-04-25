@@ -25,12 +25,12 @@ export default function Impact() {
             <p className='copy impact-header impact-header'>Since 2008 DAC’s work has supported thousands of parents in reunifying with their children or preventing the removal of their children from the family home.</p>
   
             <div className='impact-dad-img-container'>
-              <p className='dad-son-quote'><BiSolidQuoteLeft className='impact quote-left'/>He [parent mentor] was very helpful in making me feel like there was hope, because he himself had been there and he knew what I was going through.<BiSolidQuoteRight className='impact quote-right'/></p>
+              <p className='dad-son-quote'><BiSolidQuoteLeft className='impact quote-left'/>He [mentor parent] was very helpful in making me feel like there was hope, because he himself had been there and he knew what I was going through.<BiSolidQuoteRight className='impact quote-right'/></p>
               <img src={impactDadAndSon} className="dad-son-img" alt='Father holding infant son on his shoulders' />
            </div>
            
           <div className='impact-stats-container'>
-            <p className='programs section-subhead'>DAC Impact By The Numbers</p>
+            <p className='programs section-subhead'>DAC Impact By The Numbers<span className='impact-stat-asterisk'>**</span></p>
             <div className='impact-stats-content'>
               <div className='impact-stat stat-1'>
                 <img src={impactStat1} alt="" />
@@ -54,13 +54,14 @@ export default function Impact() {
                 </div>
               </div>
             </div>
+            <p className='impact-stat-disclaimer'>**As of March 2024</p>
           </div>
           </div>
         </div>
 
         <div className="impact-testimonials-container burgundy-linear-gradient">
           <div className='testimonial testimonial-1'>
-            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>My Parent mentor advocated for me, helped me to find answers that I needed, helped me with any type of resources that helped me with what I needed.<BiSolidQuoteRight className='impact quote-right'/></p>
+            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>My mentor parent advocated for me, helped me to find answers that I needed, helped me with any type of resources that helped me with what I needed.<BiSolidQuoteRight className='impact quote-right'/></p>
           </div>
           <div className='testimonial testimonial-2'>
             <img src={momAndInfant} className="impact-mom-infant" alt='' />
@@ -75,7 +76,7 @@ export default function Impact() {
             <img src={momDaughter} className="impact-mom-infant" alt='' />
           </div>
           <div className='testimonial testimonial-6'>
-            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>The social worker was there for me recently when I had an issue where I had to go to court for a warrant for about a year and the social worker was at every single court date. I will never ever forget that.<BiSolidQuoteRight className='impact quote-right'/></p>
+            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>The [DAC] social worker was there for me recently when I had an issue where I had to go to court for a warrant for about a year and the social worker was at every single court date. I will never ever forget that.<BiSolidQuoteRight className='impact quote-right'/></p>
           </div>
           <img src={singlePageLeft} className=' single-page-graphic impact-graphic-left' alt='' />
         </div>
@@ -85,7 +86,7 @@ export default function Impact() {
             <img src={momAndInfant} className="impact-mom-infant" alt='' />
           </div>
           <div className='testimonial testimonial-1'>
-            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>My Parent mentor advocated for me, helped me to find answers that I needed, helped me with any type of resources that helped me with what I needed.<BiSolidQuoteRight className='impact quote-right'/></p>
+            <p className='testimonial-quote'><BiSolidQuoteLeft className='impact quote-left'/>My mentor parent advocated for me, helped me to find answers that I needed, helped me with any type of resources that helped me with what I needed.<BiSolidQuoteRight className='impact quote-right'/></p>
           </div>
           <div className='testimonial testimonial-3'>
             <img src={paintingnails} className="impact-mom-infant" alt='' />
@@ -111,7 +112,7 @@ export default function Impact() {
           <p className='impact-copy'>DAC Leadership and Staff improve practice and advocate for systems change by participating in various committees on a national, statewide and local level —some of which include:  
 
           <ul className='impact-copy system-change-list'>
-            <li>American Bar Association’s National Alliance for Parent Representation (the Steering Committee and the Interdisciplinary Subcommittee)</li>
+            <li>American Bar Association’s National Alliance for Parent Representation</li>
             <li>Family Justice Initiative</li>
             <li>Pre-Petition Family Defense National Cohort</li>
             <li>California’s Mandated Reporting to Community Supporting Task Force</li>
@@ -121,8 +122,6 @@ export default function Impact() {
           </ul>
           </p>
           
-         
-
           <p className='impact-copy'>In addition, DAC leadership and staff educate and train those involved or impacted by the child welfare system.  Mentor Parents educate judges, Court Appointed Special Advocates (CASAs), and Department of Family and Children’s Services social workers about the child welfare system from the perspective of those with lived experience.  Corridor and First Call for Families’ teams conduct Know Your Rights presentations to community members and system partners.  Finally, DAC staff has presented at local, state and national conferences on various topics, including utilizing an interdisciplinary model in family defense, developing a pre-petition program, and building a mentor parent program.</p> 
           </div>
         </div>
@@ -132,12 +131,13 @@ export default function Impact() {
           <div className='impact-content-container impact-downloads-section '>
           <h1 className='programs section-subhead-white'>Interested in learning more about our impact?</h1>
 
-          <p className='impact-copy'>This project consists of three research studies evaluating the DAC Corridor program. The studies include quantitative analyses of client self-sufficiency changes, program outcomes for participating families, and qualitative analysis of client and staff perspectives on the program's value.</p> 
+          <p className='impact-copy'>These studies include quantitative analyses of client self-sufficiency changes, program outcomes for participating families, and qualitative analysis of client and staff perspectives on the program's value.</p> 
 
-          <ul className='impact-downloads copy-bottom'>
-            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="FY22 First Call Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY23 Snapshot</a></li>
-            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="FY22 First Call Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY22 Snapshot </a></li>
-            <li className='impact-link'><a href={require("../../Data/FinancialReports/DACCorridorEval.pdf")} download="Corridor Program Debrief" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor AY19 Program Debrief</a></li>       
+          <ul id="reports" className='impact-downloads copy-bottom'>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2023.pdf")} download="First Call for Families FY23 Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY23 Snapshot</a></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="First Call for Families FY22 Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY22 Snapshot</a></li>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/DACCorridorEval.pdf")} download="Corridor Program Debrief" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor AY19 Program Debrief</a></li>   
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/MentorParent Program2023.pdf")} download="Mentor Parent Program 2023" target="_blank" rel="noopener noreferrer" className='link-white-text'>Mentor Parent Program 2023</a></li>  
           </ul>   
         </div>
       </div>

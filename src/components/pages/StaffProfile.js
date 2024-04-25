@@ -17,7 +17,8 @@ export default function StaffProfile({submenu}) {
 
   return (
       staffBio.map((staff, index) => {
-        return <div className='staff-profile' key={index}>
+        return <div className={`staff-profile ${staff.showBio ? "full-width" : ""}`} key={index}>
+                <div className='staff-profile-left'>
                   <div className='staff-img-container'>
                     <img src={staff.img} className="staff-img" alt={`${staff.first_name} ${staff.last_name}`} />
                   </div>
@@ -42,7 +43,7 @@ export default function StaffProfile({submenu}) {
                     <p className='show-bio-btn btn-hover' onClick={() =>toggleBio(staff.staff_id)} >{staff.first_name.slice(-1) === 's' ? `${staff.first_name}' Bio` : `${staff.first_name}'s Bio`}</p>
                     : ""}
                   </div>
-              
+                </div>
                   {staff.showBio && <div className='staff-bio'>
                    
                     <p>{staff.bio}</p>

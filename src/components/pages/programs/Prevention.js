@@ -23,7 +23,7 @@ export default function Prevention() {
               <FirstCallVideos />
             </div>
               <p className='copy'>
-              First Call for Families was launched in 2021 to provide support to families before Department of Family and Children Services files a petition in dependency court. Recognizing that removal of a child is a traumatic event for the entire family, and that it can often be prevented with the right peer support, safety planning, or legal counsel, DAC established this prevention services team to help keep families together. To date, we have helped hundreds of parents and caregivers in Santa Clara County navigate investigations and mitigate risk factors affecting their children’s safety and wellbeing.</p>
+              First Call for Families was launched in 2021 to provide support to families before Department of Family and Children's Services files a petition in dependency court. Recognizing that removal of a child is a traumatic event for the entire family, and that it can often be prevented with the right peer support, safety planning, or legal counsel, DAC established this prevention services team to help keep families together. To date, we have helped hundreds of parents and caregivers in Santa Clara County navigate investigations and mitigate risk factors affecting their children’s safety and wellbeing.</p>
 
               <p className='copy'>In order to maximize our impact, we utilize an interdisciplinary team of attorneys, social workers, and mentor parents.</p>
 
