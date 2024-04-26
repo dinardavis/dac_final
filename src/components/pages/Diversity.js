@@ -29,7 +29,7 @@ export default function Diversity() {
 
         <p className='diversity-copy copy '>Incorporating diversity, equity, and inclusion practices is at the core of our daily work at DAC. We strive to integrate these principles into every aspect of our organization to ensure a welcoming and inclusive environment for all.</p>
 
-        <p className='impact-link'>Our <a href={require("../../Data/DRAFTDEIStrategicPlan.pdf")} download="DAC DEI Strategic Plan External" target="_blank" rel="noopener noreferrer" className='link-blue-text'>strategic plan </a>is in progress. Please check back for updated information.</p>
+        {/* <p className='impact-link'>Our <a href={require("../../Data/DRAFTDEIStrategicPlan.pdf")} download="DAC DEI Strategic Plan External" target="_blank" rel="noopener noreferrer" className='link-blue-text'>strategic plan </a>is in progress. Please check back for updated information.</p> */}
 
         <p className='diversity-committee-header'>Diversity, Equity, and Inclusion Committee</p>
         <ol className='diversity-committee-list diversity-copy'>
