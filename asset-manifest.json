@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dac_final/static/css/main.573b8039.css",
-    "main.js": "/dac_final/static/js/main.1d0895ae.js",
+    "main.js": "/dac_final/static/js/main.67b14888.js",
     "static/js/787.fd0d37ef.chunk.js": "/dac_final/static/js/787.fd0d37ef.chunk.js",
     "static/media/15th_video.mp4": "/dac_final/static/media/15th_video.1958ef9597f9c55769ea.mp4",
     "static/media/firstcall_english.mp4": "/dac_final/static/media/firstcall_english.27e141b8945a518083c5.mp4",
@@ -31,7 +31,6 @@
     "static/media/approach_mom.jpg": "/dac_final/static/media/approach_mom.659b41b21d459bbbeb41.jpg",
     "static/media/mentors.jpg": "/dac_final/static/media/mentors.34aa2de92d625b8e8d62.jpg",
     "static/media/handshake.jpg": "/dac_final/static/media/handshake.e8d5fd7048b50744dbad.jpg",
-    "static/media/DRAFTDEIStrategicPlan.pdf": "/dac_final/static/media/DRAFTDEIStrategicPlan.e62cb379e635c9be2f25.pdf",
     "static/media/DEI_Consultant_RFP.pdf": "/dac_final/static/media/DEI_Consultant_RFP.324f4afe028081e9fe3e.pdf",
     "static/media/attorneys.jpg": "/dac_final/static/media/attorneys.a45000a744146f19adb6.jpg",
     "static/media/logo.png": "/dac_final/static/media/logo.f26cd80f203342593180.png",
@@ -67,11 +66,11 @@
     "static/media/footer_left.png": "/dac_final/static/media/footer_left.81e613b90dc4c6a4285a.png",
     "index.html": "/dac_final/index.html",
     "main.573b8039.css.map": "/dac_final/static/css/main.573b8039.css.map",
-    "main.1d0895ae.js.map": "/dac_final/static/js/main.1d0895ae.js.map",
+    "main.67b14888.js.map": "/dac_final/static/js/main.67b14888.js.map",
     "787.fd0d37ef.chunk.js.map": "/dac_final/static/js/787.fd0d37ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.573b8039.css",
-    "static/js/main.1d0895ae.js"
+    "static/js/main.67b14888.js"
   ]
 }
