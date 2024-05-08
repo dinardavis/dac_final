@@ -3,6 +3,7 @@ import ContactForm from './ContactFom';
 import officeLocationMap from "../../assets/imgs/location.png"
 import contactLeft from "../../assets/imgs/graphics/contact_left.png"
 import contactRight from "../../assets/imgs/graphics/contact_right.png"
+import { NavHashLink } from 'react-router-hash-link';
 
 export default function ContactHome() {
 
@@ -14,7 +15,8 @@ export default function ContactHome() {
       <div className='contact-content'>
         <div className='contact-content-left'>
           <p className='contact-copy copy'>For funding, media, or general inquiries, please submit the form below.</p>
-          <p className='contact-copy copy'>If you require immediate representation on an active dependency case, click here, or call DAC’s main office phone number.</p>
+          <p className='contact-copy copy'>If you require immediate representation on an active dependency case call DAC’s main office phone number at  
+          <NavHashLink className="link-blue-text" to="tel:+1408-995-0714" target="_blank"> 408-995-0714</NavHashLink>.</p>
           <ContactForm />
         </div>
         <div className='contact-content-right'>

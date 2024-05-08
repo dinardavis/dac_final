@@ -14,7 +14,7 @@ export default function PhoneHome() {
       </div>
 
       <div className='phone-copy-container'>
-        <p className='copy phone-copy'>If you <span className='copy-bold'> <span className='phone-copy-underline'>do not have</span> a court case</span>, but have been contacted by Santa Clara County CPS (Department of Family and Children Services) and need legal advice:</p>
+        <p className='copy phone-copy'>If you <span className='copy-bold'> <span className='phone-copy-underline'>do not have</span> a court case</span>, but have been contacted by Santa Clara County CPS (Department of Family and Children's Services) and need legal advice:</p>
 
         <NavHashLink className="phone-btn desktop" to="tel:+1408-856-2992" target="_blank"> Call Our Warm Line - (408) 856-2992</NavHashLink>
 
