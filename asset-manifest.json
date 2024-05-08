@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dac_final/static/css/main.573b8039.css",
-    "main.js": "/dac_final/static/js/main.67b14888.js",
+    "main.js": "/dac_final/static/js/main.2da2aca8.js",
     "static/js/787.fd0d37ef.chunk.js": "/dac_final/static/js/787.fd0d37ef.chunk.js",
     "static/media/15th_video.mp4": "/dac_final/static/media/15th_video.1958ef9597f9c55769ea.mp4",
     "static/media/firstcall_english.mp4": "/dac_final/static/media/firstcall_english.27e141b8945a518083c5.mp4",
@@ -12,10 +12,10 @@
     "static/media/location.png": "/dac_final/static/media/location.7f80d9f493cadc4d0402.png",
     "static/media/impact_mom_daughter.jpg": "/dac_final/static/media/impact_mom_daughter.b21826eadea721fd8c7b.jpg",
     "static/media/family_collage.png": "/dac_final/static/media/family_collage.136111cb92998dba2808.png",
+    "static/media/FirstCallSnapshot2023.pdf": "/dac_final/static/media/FirstCallSnapshot2023.9fd27ac682db03898cf5.pdf",
     "static/media/impact_stat_1.jpg": "/dac_final/static/media/impact_stat_1.478bf55564860d25e4cb.jpg",
     "static/media/mom_son_intro.jpg": "/dac_final/static/media/mom_son_intro.726bc193388b2dbcdb96.jpg",
     "static/media/FirstCallSnapshot2022.pdf": "/dac_final/static/media/FirstCallSnapshot2022.13a4c1aaccf8531885cf.pdf",
-    "static/media/FirstCallSnapshot2023.pdf": "/dac_final/static/media/FirstCallSnapshot2023.13a4c1aaccf8531885cf.pdf",
     "static/media/dadandson.jpg": "/dac_final/static/media/dadandson.c9b370b36b911d102601.jpg",
     "static/media/2021.990.pdf": "/dac_final/static/media/2021.990.d9b69d03f000b2e13ead.pdf",
     "static/media/2020.990.pdf": "/dac_final/static/media/2020.990.9479dcb78b2722b7bdd5.pdf",
@@ -66,11 +66,11 @@
     "static/media/footer_left.png": "/dac_final/static/media/footer_left.81e613b90dc4c6a4285a.png",
     "index.html": "/dac_final/index.html",
     "main.573b8039.css.map": "/dac_final/static/css/main.573b8039.css.map",
-    "main.67b14888.js.map": "/dac_final/static/js/main.67b14888.js.map",
+    "main.2da2aca8.js.map": "/dac_final/static/js/main.2da2aca8.js.map",
     "787.fd0d37ef.chunk.js.map": "/dac_final/static/js/787.fd0d37ef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.573b8039.css",
-    "static/js/main.67b14888.js"
+    "static/js/main.2da2aca8.js"
   ]
 }
