@@ -1,6 +1,6 @@
 export const staffData = [
   {
-    office_name: "Leadership Team",
+    office_name: "Leadership Teams",
     id: 0,
     office_type: "header",
   },
@@ -559,11 +559,11 @@ export const staffData = [
         staff_id: 31,
         first_name: "Kimberley",
         last_name: "Mejia",
-        suffix_name: "M.S.W.",
+        suffix_name: "M.S.W., A.S.W.",
         title: "Social Worker",
         email: "kmejia@sccdac.org",
         img: "./images/staff_images/default.png",
-        bio: "",
+        bio: "Kimberley joined DAC as a part of the Corridor team because she is passionate about supporting folks navigate intricate and difficult systems. She holds a bachelor's and master's degree in social work, both from San Jose State and has years of experience providing intensive case management, crisis intervention, mental health services, and harm reduction support. Kimberley is passionate about advocacy, abolition, decolonization, and empowering people to set and achieve their goals. Outside of her professional life, Kimberley enjoys film photography, collecting vinyl records, reading, and traveling.",
         showBio: false,
       },
       {
