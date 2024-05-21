@@ -3,7 +3,7 @@ import singlePageTop from "../../assets/imgs/graphics/singlepage_top.png"
 import singlePageMiddle from "../../assets/imgs/graphics/singlepage_middle.png"
 import { BiSolidQuoteLeft } from 'react-icons/bi'
 import { BiSolidQuoteRight } from 'react-icons/bi'
-import family from "../../assets/imgs/donate_family.png"
+import family from "../../assets/imgs/donate_family.jpg"
 
 export default function Donate() {
   return (
