@@ -41,9 +41,9 @@ export default function Careers() {
         : ""}
         
         <div className='career-content'>
-          <h1 className='section-subhead'>Requests For Proposals</h1>
+          {/* <h1 className='section-subhead'>Requests For Proposals</h1>
 
-          -<a href={require("../../Data/DEI_Consultant_RFP.pdf")} download="DAC DEI Consultant RFP" target="_blank" rel="noopener noreferrer" className="career-title-link link-blue-text">Diversity, Equity, and Inclusion (DEI) Consultant</a>
+          -<a href={require("../../Data/DEI_Consultant_RFP.pdf")} download="DAC DEI Consultant RFP" target="_blank" rel="noopener noreferrer" className="career-title-link link-blue-text">Diversity, Equity, and Inclusion (DEI) Consultant</a> */}
 
           <h1 className='section-subhead'>Internship & Volunteer Opportunities</h1>
 
