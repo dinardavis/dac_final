@@ -549,7 +549,7 @@ export const staffData = [
         last_name: "Lederman",
         suffix_name: "J.D.",
         title: "Staff Attorney",
-        email: "aldederman@sccdac.org",
+        email: "alederman@sccdac.org",
         img: "./images/staff_images/abby.jpg",
         bio: "As part of DAC’s Corridor program, Abigail collaborates with social workers and mentor parents to provide wraparound support to parents at the intersection of the criminal and family policing systems. Before coming to DAC, she developed a family law project within an Oakland-based reentry organization, providing legal advice and direct representation to clients impacted by the criminal legal system. Earlier, Abigail’s first experience working with families navigating the risk or reality of foster care led her to pursue a law degree at NYU, where she participated in the Family Defense Clinic. She is thrilled to join a team that so expertly fights for families to be trusted and empowered to remain intact, to heal, and to thrive.",
         showBio: false,

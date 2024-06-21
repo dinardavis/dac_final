@@ -33,14 +33,13 @@ export default function Diversity() {
 
         <p className='diversity-committee-header'>Diversity, Equity, and Inclusion Committee</p>
         <ol className='diversity-committee-list diversity-copy'>
-          <li>Crystal Mendoza-Velarde, Chair</li>
+          <li>Nicole Radden, Chair</li>
           <li>Kira Johnson, Vice-Chair</li>
-          <li>Nicole Radden, Secretary </li>
+          <li>Maggie Ross, Secretary</li> 
+          <li>Crystal Mendoza-Velarde</li>
           <li>Gildardo Amador</li>
-          <li>Hilary Kushins </li>
-          <li>Jaime Lopez </li>
-          <li>Maggie Law</li>
-          <li>Maggie Ross</li>
+          <li>Hilary Kushins</li>
+          <li>Jaime Lopez</li>
           <li>Rehmi Ruiz</li>
         </ol>
       </div>
