@@ -60,6 +60,16 @@ export default function CareersDetail() {
                    <p className="copy" key={index}>{`${duty}`}</p>
                 ))}
 
+                {currentJob[0].job_duties_bullets ? <ul className="copy unordered-list">
+                {currentJob[0].job_duties_bullets.map((qual, index) => (
+                   <li key={index}>{`${qual}`}</li>
+                ))}
+                </ul> : ""}
+
+                {currentJob[0].job_duties_closing ? currentJob[0].job_duties_closing.map((duty, index) => (
+                   <p className="copy" key={index}>{`${duty}`}</p> 
+                )) : ""}
+
                 <p className="copy-bold">Desired Qualifications</p>
                 <ul className="copy unordered-list">
                 {currentJob[0].job_quals.map((qual, index) => (
@@ -70,26 +80,30 @@ export default function CareersDetail() {
                 <p className="copy-bold">Salary/Benefits</p>
                 <p className="copy">{currentJob[0].salary}</p>
 
+                <p className="copy-bold">DAC’s Diversity, Equity and Inclusion (DEI) Mission Statement</p>
+                <p className="copy">At Dependency Advocacy Center, our mission is to create an inclusive and equitable environment where respect, kindness, and empathy guide all interactions with our staff, stakeholders, and clients. We are dedicated to fostering a culture of diversity, equity, and inclusion within our organization.</p>
+                <p className="copy">We firmly believe that every parent and child entering the dependency system deserves to be treated with dignity, compassion, and respect. These values are not only applicable to our clients but also extend to our staff members.</p>
+                <p className="copy">We are committed to continuous learning and self-reflection on matters concerning diversity, equity, and inclusion. Through ongoing education, we seek to deepen our understanding and awareness of these issues. By doing so, we can effectively advocate for and promote all aspects of inclusion, including diverse representation in our leadership and staff.</p>
+                <p className="copy">At DAC, we are determined to increase demographic diversity within our organization. We aspire to become an actively anti-racist company and a strong ally to the communities we serve. We recognize the importance of intentional efforts to support individuals of diverse ethnicities, abilities, genders, ages, and sexual orientations.</p>
+                <p className="copy">Incorporating diversity, equity, and inclusion practices is at the core of our daily work at DAC. We strive to integrate these principles into every aspect of our organization to ensure a welcoming and inclusive environment for all.</p>
+
                 <p className="copy-bold">COVID-19 Considerations:</p>
                 <p className="copy">DAC is taking full precautions to keep their staff and clients safe. DAC requires that all staff be fully vaccinated for COVID-19.</p>
 
                 <p className="copy-bold">Application Process</p>
-                <p className="copy">Please send cover letter and resume via email to DACjobs@sccdac.org. Cover letter to include answers to the following questions:</p>
+                <p className="copy">Please submit your cover letter and resume via the "Apply Now" button below.</p>
 
-                <ol className="copy order-list">
+                <p className="copy">In your cover letter, please include the following information: In order to best serve our clients and our community, DAC is committed to creating a diverse and inclusive workplace in which differences are acknowledged and valued. How has your personal background or experiences, professional or otherwise, prepared you to contribute to social justice, race equity, and diversity among our staff?"</p>
+
+                {/* <ol className="copy order-list">
                   <li>Why are you interested in working as a family defense attorney and at DAC specifically?</li>
                   <li>In order to best serve our clients and our community, DAC is committed to creating a diverse and inclusive workplace in which differences are acknowledged and valued. How has your personal background or experiences, professional or otherwise, prepared you to contribute to social justice, race equity, and diversity among our staff?</li>
-                </ol>
-
-        
-        
+                </ol> */}
+    
                 <button 
                   className="cta-btn career-apply-btn copy-bottom"
                   onClick={toggleShowApplyForm}
                   >Apply Now</button>
-     
-
-              
             </div>
        
           </div>
