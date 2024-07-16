@@ -283,7 +283,7 @@ export default function ApplyForm(props) {
   function sendEmail(event) {
     event.preventDefault();
     if(formInputsValid.formValid) {
-      emailjs.sendForm(process.env.REACT_APP_APPLY_SERVICE_ID, process.env.REACT_APP_APPLY_TEMPLATE_ID, event.target, process.env.REACT_APP_APPLY_PUBLIC_KEY)
+      emailjs.sendForm("service_yanmhdm", process.env.REACT_APP_APPLY_TEMPLATE_ID, event.target, process.env.REACT_APP_APPLY_PUBLIC_KEY)
         .then(function(response) {
           setEmailSuccess(true)
           clearInputs()
