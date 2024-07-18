@@ -1461,6 +1461,11 @@ section {
   margin-bottom: 1rem;
 }
 
+.article-image {
+  margin-bottom: 1rem;
+  border-radius: .2rem;
+}
+
 .article-readmore {
   display: flex;
   justify-content: space-between;
@@ -1502,6 +1507,7 @@ section {
 
 .article-detail-header {
   position: absolute;
+  min-width: 500px;
   max-width: 500px;
   bottom: 4rem;
   padding: 1rem 1.5rem;
@@ -4524,6 +4530,7 @@ select {
 
   .article-detail-header {
     position: relative;
+    min-width: auto;
     max-width: 100%;
     width: 100%;
     bottom: 0;
