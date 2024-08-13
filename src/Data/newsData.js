@@ -21,7 +21,27 @@ const newsData = [
 
   //   url: "/updates-articles"
   // },
+  {
+    id: 9,
+    title: "DAC Mourns the Loss of Longstanding Board Member, Ann Whyte J.D.",
+    date: "August 5, 2024",
+    author: "",
+    preface: [""],
+    img: "./images/news_images/ann.png",
+    imgDesc: "In Loving Memory Notice for Board Member, Ann Whyte", 
+    video:"",
+    video_desc: "",
+    second_image: "",
+    second_img_desc: "",
+    body: ["We are very sad to share that Ann Whyte, a longstanding member of our Board of Directors and previous Board Chair, passed away Sunday, August 4, 2024.", "Ann received her B.A. from Smith College and her J.D. from Loyola University, Los Angeles. She dedicated her life to serving children and families in Santa Clara County: from her work with Child Advocates since 1987, to representing parents in juvenile dependency court proceedings, and her participation in the Child Abuse Prevention Council. In addition to her great work, she was an Honorary Life Member of the American Cancer Society Board. She was also always willing to share pictures of her four grandchildren, who are the light of her life.", "Ann was deeply committed to DAC’s success, and we were privileged to have her on our Board of Directors. She served on the Board from 2013 right up until her passing, and throughout the years she was crucial to the growth and formalization of our governance structures. Her dynamic energy, intelligence, and great joyfulness will be missed.", "We are so thankful for the life Ann lived and send our condolences to her family in this time. May she rest in peace."],
+    footer: [""],
+    copyright: [""],
+    article_link_copy: "",
+    article_link_last_word: "",
+    article_link: "",
 
+    url: "/updates-articles"
+  },
   {
     id: 8,
     title: "We’re Hiring!",

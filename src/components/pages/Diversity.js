@@ -36,7 +36,6 @@ export default function Diversity() {
           <li>Nicole Radden, Chair</li>
           <li>Kira Johnson, Vice-Chair</li>
           <li>Maggie Ross, Secretary</li> 
-          <li>Crystal Mendoza-Velarde</li>
           <li>Gildardo Amador</li>
           <li>Hilary Kushins</li>
           <li>Jaime Lopez</li>
