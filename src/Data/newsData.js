@@ -21,6 +21,28 @@ const newsData = [
 
   //   url: "/updates-articles"
   // },
+
+
+    {
+    id: 10,
+    title: "Congratulations to Judge Cynthia Chen, the newest member of the Santa Clara County bench!",
+    date: "July 31, 2024",
+    author: "",
+    preface: [""],
+    img: "./images/news_images/cc_judgeship.jpeg",
+    imgDesc: "Judge Cynthia Chen swearing in ceremony", 
+    video:"",
+    video_desc: "",
+    second_image: "./images/news_images/cynthia_judgeship.jpeg",
+    second_img_desc: "Judge Cynthia Chen swearing in ceremony",
+    body: ["","Past and present DAC staff, along with Cynthia's family, friends, and many other colleagues attended her swearing-in ceremony on July 31st, and were excited to honor and celebrate Judge Chen as she takes on this new role in our justice system. DAC is very thankful for her many years of service to our clients, organization, and community, and we look forward to her tenure on the bench!"],
+    footer: [""],
+    copyright: [""],
+    article_link_copy: "",
+    article_link: "",
+
+    url: "/updates-articles"
+  },
   {
     id: 9,
     title: "DAC Mourns the Loss of Longstanding Board Member, Ann Whyte J.D.",

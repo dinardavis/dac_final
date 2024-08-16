@@ -43,6 +43,7 @@ function App() {
             <Route path="board" element={<Board />} />
             <Route path="financials" element={<Financials />} />
             <Route path="impact" element={<Impact />} />
+            <Route path="deia" element={<Diversity />} />
             <Route path="dei" element={<Diversity />} />
 
             <Route path="family-defense-programs" element={<FamilyDefense />} />

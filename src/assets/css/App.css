@@ -1466,6 +1466,11 @@ section {
   border-radius: .2rem;
 }
 
+.second-article-image {
+  margin-bottom: 1rem;
+  border-radius: .2rem;
+}
+
 .article-readmore {
   display: flex;
   justify-content: space-between;
@@ -3328,6 +3333,12 @@ select {
   max-width: 800px;
   margin-bottom: 1.5rem;
 }
+
+.diversity-header-wide {
+  max-width: 900px;
+  margin-bottom: 1.5rem;
+}
+
 
 .diversity-subhead {
   margin: 1.5rem 0 1rem;

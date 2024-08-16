@@ -17,8 +17,6 @@ export default function NewsArticleDetail() {
     );
   }, [params.id]);
 
-  console.log(currentArticle)
-
   React.useEffect(() => {
     if(currentArticle){ 
       if(currentArticle[0].video) {
@@ -41,8 +39,8 @@ export default function NewsArticleDetail() {
         let article_second_image = document.createElement("img")
         article_second_image.src = `.${currentArticle[0].second_image}`
         article_second_image.alt = `${currentArticle[0].second_img_desc}`
-        article_second_image.height=300;
-        article_second_image.classList.add("article-image", "img-float-left")
+        article_second_image.height=350;
+        article_second_image.classList.add("second-article-image", "img-float-left")
         articleBody.after(article_second_image)
       }
     }

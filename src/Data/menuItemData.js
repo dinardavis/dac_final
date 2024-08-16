@@ -27,8 +27,8 @@ export const menuItemData = [
         url: 'impact',
       },
       {
-        title: 'DEI at DAC',
-        url: 'dei',
+        title: 'DEIA at DAC',
+        url: 'deia',
       },
     ],
   },
