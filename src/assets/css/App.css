@@ -4551,6 +4551,11 @@ select {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+  .second-article-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
