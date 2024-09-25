@@ -134,6 +134,7 @@ export default function Impact() {
           <p className='impact-copy'>These studies include quantitative analyses of client self-sufficiency changes, program outcomes for participating families, and qualitative analysis of client and staff perspectives on the program's value.</p> 
 
           <ul id="reports" className='impact-downloads copy-bottom'>
+            <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2024.pdf")} download="First Call for Families FY24 Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY24 Snapshot</a></li>
             <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2023.pdf")} download="First Call for Families FY23 Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY23 Snapshot</a></li>
             <li className='impact-link'><a href={require("../../Data/FinancialReports/FirstCallSnapshot2022.pdf")} download="First Call for Families FY22 Snapshot" target="_blank" rel="noopener noreferrer" className='link-white-text'>First Call for Families FY22 Snapshot</a></li>
             <li className='impact-link'><a href={require("../../Data/FinancialReports/DACCorridorEval.pdf")} download="Corridor Program Debrief" target="_blank" rel="noopener noreferrer" className='link-white-text'>Corridor AY19 Program Debrief</a></li>   
