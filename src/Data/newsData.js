@@ -22,7 +22,26 @@ const newsData = [
   //   url: "/updates-articles"
   // },
 
+  {
+    id: 11,
+    title: "Remembering DAC Co-Founder, AnnaLisa Chung",
+    date: "November 4, 2024",
+    author: "",
+    preface: [""],
+    img: "./images/news_images/annalisa.png",
+    imgDesc: "In Loving Memory Image of AnnaLisa Chung", 
+    video:"",
+    video_desc: "",
+    second_image: "",
+    second_img_desc: "",
+    body: ["Dependency Advocacy Center is very sad to share that AnnaLisa Chung, one of our co-founders and our first Chief Executive Officer, passed away on November 2, 2024 after a long battle with cancer.","Through many seasons of change, AnnaLisa was a dynamic driver of creativity and growth both for DAC and for our community as a whole. She championed Reunification Day in Santa Clara County, which now continues as an annual tradition celebrating families who have been able to reunite after separation through the child welfare system. She stewarded a substantial expansion of our social work and mentor parent programs, including our mentors' crucial role in Dependency Wellness Court. Thanks to her efforts, thousands of parents over the years have had a compassionate and empathetic presence to walk alongside them in some of the worst moments of their lives. Near the end of her tenure at DAC, AnnaLisa was especially passionate about preventing needless entry into the formal child welfare system. She was able to see at least some of those efforts come to fruition, though we know there is still a long road ahead in the work of preventative advocacy and support. Her tireless efforts elevated DAC as a model of practice, and she became a consistent presence in state-wide and national family defense spaces.", "AnnaLisa was fiercely dedicated to the families we serve and held an expansive vision of dignity and zealous advocacy for every person in our system. A true bridge-builder, she was both loving and thoughtful in how she brought together the community of child welfare practitioners and partners in Santa Clara County. Above all, she uniquely embodied strong leadership that is also kind and loving. She had a special ability to make people feel seen, held, and cared for. Of all that we are grieving with her passing, it is undoubtedly this heart of care, joy, and generosity that we will miss most.", "Even as we take time to mourn her loss, we also remember that she was a person of incredible action, and so renew our commitment to carrying on her life's work. As DAC’s leadership, it is our dearest hope that our continued efforts on behalf of marginalized families will do honor to her example of love in action, and legacy of dedication to justice.", "As we remember and give thanks for AnnaLisa, our thoughts are with her family and loved ones in this time."],
+    footer: [""],
+    copyright: [""],
+    article_link_copy: "",
+    article_link: "",
 
+    url: "/updates-articles"
+  },
     {
     id: 10,
     title: "Congratulations to Judge Cynthia Chen, the newest member of the Santa Clara County bench!",
