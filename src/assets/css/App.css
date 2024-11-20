@@ -2769,6 +2769,7 @@ select {
 
 .career-link {
   display: flex;
+  color: hsl(var(--clr-primary));
 }
 
 .career-title-link {
