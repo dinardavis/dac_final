@@ -77,6 +77,17 @@ export const boardData = [
       //   showBio: false,
       // },
       {
+        board_id: 10,
+        prefix_name: "",
+        first_name: "Mario",
+        last_name: "Montemayor",
+        suffix_name: "",
+        title: "",
+        img: "./images/board_images/mario.jpg",
+        bio: "Mario Montemayor is a Program Coordinator in the Behavioral Health department at Community Solutions. He is passionate about working with individuals dealing with challenges such as substance abuse and mental illness. As a Program Coordinator, he conducts intakes and assessments, works with clients to ensure their needs are being met, and coordinates with Rehabilitation Counselors to schedule psychiatric appointments as necessary. Previously, Mario worked at DAC for seven years as a Mentor Parent in Dependency Wellness Court (formerly Family Wellness Court). He considers his work with fathers to reunify with their children to be one of the greatest honors in his life.",
+        showBio: false,
+      },
+      {
         board_id: 8,
         prefix_name: "",
         first_name: "Héctor",
