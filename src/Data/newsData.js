@@ -17,8 +17,9 @@ const newsData = [
   //   footer: [""],
   //   copyright: [""],
   //   article_link_copy: "",
+  //   article_link_last_word: "",
   //   article_link: "",
-
+  
   //   url: "/updates-articles"
   // },
 
