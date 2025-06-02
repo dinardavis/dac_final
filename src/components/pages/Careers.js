@@ -35,6 +35,11 @@ export default function Careers() {
           <h1 className='section-subhead'>Career Openings</h1>
 
           <div className='career-title-container'>
+ 
+
+          <a href={require("../../Data/DAC_COO_2025.pdf")} download="DAC COO Role Description" target="_blank" rel="noopener noreferrer" className='career-link'>
+            -<p className="career-title-link link-blue-text">Chief Operating Officer</p>
+          </a>
             {careers}
           </div>
         </div>
@@ -44,6 +49,8 @@ export default function Careers() {
           {/* <h1 className='section-subhead'>Requests For Proposals</h1>
 
           -<a href={require("../../Data/DEI_Consultant_RFP.pdf")} download="DAC DEI Consultant RFP" target="_blank" rel="noopener noreferrer" className="career-title-link link-blue-text">Diversity, Equity, and Inclusion (DEI) Consultant</a> */}
+
+           
 
           <h1 className='section-subhead'>Internship & Volunteer Opportunities</h1>
 
